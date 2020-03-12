@@ -39,7 +39,7 @@
 
     </div>
 
-    <a class="infinitelogo" href="eyeco.php"><img src="/infinitepetit.png" alt="Menu"/></a>
+    <a class="infinitelogo" href="eyeco.php"><img src="images/infinitepetit.png" alt="Menu"/></a>
 
 </div>
 

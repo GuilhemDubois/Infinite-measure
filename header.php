@@ -10,12 +10,12 @@
 
     <a class ="test" href = "LesTests.php" title = "Passer les tests">TESTS</a>
 
-    <a href="VotreProfil.php"><img class="logoprofil" src="/profil.png" alt="Profil" title="Votre Profil" /></a>
+    <a href="VotreProfil.php"><img class="logoprofil" src="images/profil.png" alt="Profil" title="Votre Profil" /></a>
 
 </div>
 
 
-    <a  class="LogoHeader" href="eyeco.php"><img src="/logopetitpetit.png" alt="Menu"/></a>
+    <a  class="LogoHeader" href="eyeco.php"><img src="images/logopetitpetit.png" alt="Menu"/></a>
     <h1 class = "introduction" id="conteneur2">EYECO</h1>
 
 

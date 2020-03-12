@@ -20,7 +20,7 @@
 
 
 
-    <img src="/Users/MacJulian/Documents/ISEP/A1/APP/INFO/eyecopetit.png" alt="Menu"/>
+    <img src="images/eyecopetit.png" alt="Menu"/>
 
 
 
