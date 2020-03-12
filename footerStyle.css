@@ -2,14 +2,16 @@
 footer
 {
     background-color: #839BB9;
-    border: solid #839BB9;
-    border-radius: 1em;
+
+
     position: fixed;
     bottom: 0;
-    width : 88.6em;
+    left: 0;
+    right: 0;
     font-weight: bold;
     font-family: gill sans;
     color: white;
+
 
 }
 .basdepage

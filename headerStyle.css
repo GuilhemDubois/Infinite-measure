@@ -5,7 +5,7 @@ body
 }
 .langues
 {
-    position: relative;
+    position: fixed;
     font-size: 1em;
     font-family: "Gill Sans";
     top: -16em;
@@ -14,15 +14,17 @@ body
 }
 .menu
 {
+
     display: flex;
     justify-content: space-around;
     font-family: "Gill Sans";
     background-color: #839BB9;
     height: 7em;
-    position: relative;
-    width: 105%;
-    left: -3%;
-    top:-1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
 
 
 }
@@ -38,6 +40,7 @@ body
 {
 
     color: black;
+    border-bottom: ;
 
 }
 .introduction
@@ -53,9 +56,10 @@ body
 }
 .LogoHeader
 {
+    height: 7em;
 
-    position: relative;
-    top: -7.8em;
+
+
 
 }
 .logoprofil

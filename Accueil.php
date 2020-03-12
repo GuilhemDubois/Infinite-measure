@@ -16,15 +16,6 @@
 
 <body>
 
-<div class="LogoAccueil">
-
-
-
-    <img src="images/eyecopetit.png" alt="Menu"/>
-
-
-
-</div>
 
     <?php include('header.php'); ?>
 
@@ -32,11 +23,6 @@
 
 <div class ="TitreAccueil">
 
-
-    <p>
-        EYECO
-
-    </p>
 
 
 </div>

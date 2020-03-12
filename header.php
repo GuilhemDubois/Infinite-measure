@@ -1,6 +1,7 @@
 
 
 <div class="menu" id="conteneur">
+    <a  href="eyeco.php"><img class="LogoHeader" src="images/logopetitpetit.png" alt="Menu"/></a>
 
     <a class ="test" href = "eyeco.php" title = "Accueil">ACCUEIL</a>
 
@@ -15,8 +16,8 @@
 </div>
 
 
-    <a  class="LogoHeader" href="eyeco.php"><img src="images/logopetitpetit.png" alt="Menu"/></a>
-    <h1 class = "introduction" id="conteneur2">EYECO</h1>
+
+
 
 
 
