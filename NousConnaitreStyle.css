@@ -1,0 +1,38 @@
+.apropos
+{
+
+    color: white;
+
+    font-family: gill sans;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.6em;
+    position: absolute;
+    right: 44%;
+    bottom: 70%;
+
+}
+.barre
+{
+
+    height: 4px;
+    width: 16%;
+    background-color: white;
+    position: absolute;
+    right: 41%;
+    bottom: 65%;
+}
+.photos
+{
+
+    display: flex;
+    justify-content: space-around;
+    height: 10em;
+    align-items: center;
+}
+
+{
+
+
+
+}

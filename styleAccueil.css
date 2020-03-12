@@ -1,0 +1,71 @@
+
+.envoyer
+{
+
+    font-weight: bold;
+    font-size: 1em;
+    position: fixed;
+    right: 46%;
+    bottom: 40%;
+    background-color: #839BB9;
+    border: #839BB9;
+    border-radius: 1em;
+    color: white;
+
+
+}
+.envoyer:hover
+{
+
+background-color: #636A85;
+
+}
+#pseudo
+{
+
+    position: fixed;
+    height: 5%;
+    width: 20%;
+    bottom: 55%;
+    right: 37.5%;
+    font-size: 1em;
+
+}
+#pass
+{
+
+    position: fixed;
+    height: 5%;
+    width: 20%;
+    right: 37.5%;
+    bottom: 47%;
+    font-size: 1em;
+
+}
+.sinscrire
+{
+
+    color: white;
+    font-size: 0.8em;
+    position: fixed;
+    right: 47%;
+    top: 61%;
+}
+.sinscrire:hover {
+    color: #636A85;
+}
+
+#inscriptions
+{
+
+    color: white;
+    font-family: "Gill Sans";
+    font-size: 1.2em;
+    position: fixed;
+    bottom: 60%;
+    right: 38.5%;
+
+
+}
+
+

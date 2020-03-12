@@ -1,0 +1,66 @@
+body
+{
+    background-color: rgb(135,206,230);
+
+}
+.langues
+{
+    position: relative;
+    font-size: 1em;
+    font-family: "Gill Sans";
+    top: -16em;
+    right: -80em;
+
+}
+.menu
+{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Gill Sans";
+    background-color: #839BB9;
+    height: 7em;
+    position: relative;
+    width: 105%;
+    left: -3%;
+    top:-1em;
+
+
+}
+.test
+{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: -70%;
+
+}
+.test:hover
+{
+
+    color: black;
+
+}
+.introduction
+{
+
+    font-family: "Gill Sans";
+    color: white;
+    position: relative;
+    top:-6.5em;
+    left: 2.5em;
+
+
+}
+.LogoHeader
+{
+
+    position: relative;
+    top: -7.8em;
+
+}
+.logoprofil
+{
+
+    position: relative;
+    bottom: -4.5em;
+}
