@@ -1,6 +1,8 @@
-<!DOCTYPE html>
 
-<html>
+
+
+
+
 <head>
 
     <meta charset="utf-8" />
@@ -14,6 +16,7 @@
 <body>
 
     <?php include('header.php'); ?>
+
     <div class="images">
 
 
@@ -26,8 +29,6 @@
 
     <?php include('footer.php'); ?>
 
-
 </body>
 
 
-</html>

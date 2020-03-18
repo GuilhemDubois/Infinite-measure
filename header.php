@@ -1,9 +1,24 @@
 
+<?php include('testlangue.php');
+$_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
+
+
 
 <div class="menu" id="conteneur">
     <a  href="eyeco.php"><img class="LogoHeader" src="images/logopetitpetit.png" alt="Menu"/></a>
 
-    <a class ="test" href = "eyeco.php" title = "Accueil">ACCUEIL</a>
+    <a class ="test" href = "eyeco.php" title = "Accueil">
+        <?php if ($_SESSION['langue'] == 'francais')
+        {
+            echo "ACCEUIL";
+
+        }
+        else
+        {
+            echo "HOME";
+
+        }
+        ?></a>
 
     <a class ="test" href = "NousConnaitre.php" title = "À propos">À PROPOS</a>
 
@@ -24,9 +39,12 @@
 
 
 
-<select class="langues" name="LANGUAGE">
-    <option hidden value="choix1">Langage</option>
-    <option value="choix2">English</option>
-    <option value="choix2">Français</option>
-</select>
+<div class="dropdown">
+    <button class="dropbtn">Langage</button>
+    <div class="dropdown-content">
+        <a href="changelangue.php">francais</a>
+        <a href="changelangue.php">english</a>
+    </div>
+</div>
+
 
