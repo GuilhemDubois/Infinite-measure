@@ -40,7 +40,9 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 
 <div class="dropdown">
-    <button class="dropbtn">Langage</button>
+    <button class="dropbtn">
+        <?php echo($_SESSION['langue'])?>
+    </button>
     <div class="dropdown-content">
         <a href="changelangue.php">francais</a>
         <a href="changelangue.php">english</a>
