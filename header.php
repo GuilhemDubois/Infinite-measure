@@ -20,9 +20,29 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
         }
         ?></a>
 
-    <a class ="test" href = "NousConnaitre.php" title = "À propos">À PROPOS</a>
+    <a class ="test" href = "NousConnaitre.php" title = "À propos"> <?php if ($_SESSION['langue'] == 'francais')
+        {
+            echo "A PROPOS";
 
-    <a class ="test" href = "Resultats.php" title = "Vos résultats">RÉSULTATS</a>
+        }
+        else
+        {
+            echo "ABOUT US";
+
+        }
+        ?></a>
+
+    <a class ="test" href = "Resultats.php" title = "Vos résultats"> <?php if ($_SESSION['langue'] == 'francais')
+        {
+            echo "RESULTATS";
+
+        }
+        else
+        {
+            echo "RESULTS";
+
+        }
+        ?></a>
 
     <a class ="test" href = "LesTests.php" title = "Passer les tests">TESTS</a>
 
