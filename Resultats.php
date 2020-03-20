@@ -1,9 +1,21 @@
 <!DOCTYPE html>
+<?php include('testlangue.php');
+$_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Vos résultats</title>
+    <title>  <?php if ($_SESSION['langue'] == 'francais')
+        {
+            echo "PAGE D'ACCEUIL";
+
+        }
+        else
+        {
+            echo "HOME";
+
+        }
+        ?></title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="ResultatsStyle.css"/>

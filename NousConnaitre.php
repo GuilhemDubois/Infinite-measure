@@ -3,7 +3,17 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
-    <title>À propos</title>
+    <title>  <?php if ($_SESSION['langue'] == 'francais')
+        {
+            echo "A PROPOS";
+
+        }
+        else
+        {
+            echo "ABOUT US";
+
+        }
+        ?></title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="NousConnaitreStyle.css"/>
@@ -19,9 +29,17 @@
 
 
 <div class="apropos">
+    <?php if ($_SESSION['langue'] == 'francais')
+    {
+        echo "NOTRE EQUIPE";
 
+    }
+    else
+    {
+        echo "OUR CREW";
 
-    Notre équipe
+    }
+    ?>
 
 </div>
 

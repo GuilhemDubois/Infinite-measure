@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-
+<?php include('testlangue.php');
+$_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 <html>
 <head>
     <!-- En-tête de la page -->
