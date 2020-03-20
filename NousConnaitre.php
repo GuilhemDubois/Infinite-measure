@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
     <title>À propos</title>
@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<br>
 
 <?php include('header.php'); ?>
 
@@ -28,6 +28,7 @@
 <div class="barre">
 
 </div>
+
 
 <div class="photos">
 
