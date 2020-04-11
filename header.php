@@ -10,7 +10,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
     <a class ="test" href = "eyeco.php" title = "Accueil">
         <?php if ($_SESSION['langue'] == 'francais')
         {
-            echo "ACCEUIL";
+            echo "ACCUEIL";
 
         }
         else
