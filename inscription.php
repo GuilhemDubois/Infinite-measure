@@ -11,6 +11,8 @@
 
 <?php include('header.php'); ?>
 
+salut
+mec
 
 <?php include('footer.php'); ?>
 
