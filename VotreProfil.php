@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<?php include('testlangue.php');
-$_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
-<html>
+
+
+
 <head>
 
-    <meta charset="utf-8" /> <!-- Doctype : il s'agit d'une page HTML -->
-    <title>Page d'accueil</title> <!-- Titre de la page -->
+    <meta charset="utf-8" />
+    <title>Page d'accueil</title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="styleAccueil.css"/>
@@ -67,4 +66,3 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 </body>
 
 
-</html></html>
