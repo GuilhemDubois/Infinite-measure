@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 11 avr. 2020 à 16:13
+-- Généré le :  jeu. 16 avr. 2020 à 13:40
 -- Version du serveur :  5.6.11
 -- Version de PHP :  7.3.12
 
@@ -21,22 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `eyeco`
 --
-
--- --------------------------------------------------------
-
---
--- Structure de la table `administrateur`
---
-
-DROP TABLE IF EXISTS `administrateur`;
-CREATE TABLE IF NOT EXISTS `administrateur` (
-  `id Administrateur` int(11) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(255) NOT NULL,
-  `prenom` varchar(255) NOT NULL,
-  `identifiant` varchar(255) NOT NULL,
-  `mdp` varchar(255) NOT NULL,
-  PRIMARY KEY (`id Administrateur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -75,20 +59,28 @@ CREATE TABLE IF NOT EXISTS `test` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `utilisateur`
+-- Structure de la table `user`
 --
 
-DROP TABLE IF EXISTS `utilisateur`;
-CREATE TABLE IF NOT EXISTS `utilisateur` (
-  `id Utilisateur` int(11) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `id_user` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) NOT NULL,
   `prenom` varchar(255) NOT NULL,
-  `identifiant` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
-  `compagnie` varchar(255) NOT NULL,
-  `datedenaissance` date NOT NULL,
-  PRIMARY KEY (`id Utilisateur`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `codepilote` int(11) NOT NULL,
+  `admin` tinyint(1) DEFAULT NULL,
+  `identifiant` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id_user`, `nom`, `prenom`, `email`, `mdp`, `codepilote`, `admin`, `identifiant`) VALUES
+(4, 'guilhem', 'Dubois', 'guilhem.dubois@isep.fr', '$2y$10$gz.3DAtBXkWXoFxt5HpiD.prqhpDRPskXkN8PbZYwlqxys8IbrZUO', 2, NULL, 'guigui');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
