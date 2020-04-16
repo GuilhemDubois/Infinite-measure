@@ -11,7 +11,6 @@
 
 <?php include('header.php'); ?>
 
-<br><br><br><br><br><br><br><br><br>
 
 <?php
 if(!empty($_POST)) {

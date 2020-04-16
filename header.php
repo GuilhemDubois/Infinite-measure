@@ -33,22 +33,29 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
         }
         ?></a>
 
-    <a class ="test" href = "Resultats.php" title = "Vos résultats"> <?php if ($_SESSION['langue'] == 'francais')
+    <a class ="test" href = "Resultats.php" title = "Vos résultats"> <?php if (($_SESSION['langue'] == 'francais') && (isset($_SESSION['auth'])))
         {
             echo "RESULTATS";
 
         }
-        else
-        {
+        elseif (isset($_SESSION['auth'])){
+
             echo "RESULTS";
 
         }
         ?></a>
 
     <a class ="test" href = "LesTests.php" title = "Passer les tests">TESTS</a>
-
+    <?php if(isset($_SESSION['auth'])): ?>
+        <div class="bouton">
+            <p>
+                <a href="logout.php">Déconnexion</a>
+            </p>
+        </div>
+    <?php endif; ?>
+    <?php if(!isset($_SESSION['auth'])): ?>
     <a href="VotreProfil.php"><img class="logoprofil" src="images/profil.png" alt="Profil" title="Votre Profil" /></a>
-
+    <?php endif; ?>
 </div>
 
 
