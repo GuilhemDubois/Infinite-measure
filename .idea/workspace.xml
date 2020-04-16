@@ -25,6 +25,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RunManager">
+    <configuration name="eyeco.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Infinite-measure/eyeco.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.eyeco.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,10 +48,34 @@
       <option name="presentableId" value="Default" />
       <updated>1586619762025</updated>
       <workItem from="1586619763449" duration="139000" />
+      <workItem from="1586849519089" duration="56000" />
+      <workItem from="1586849603811" duration="15234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="347" y="0" key="#PHP" timestamp="1586849946893">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="347" y="0" key="#PHP/0.0.1280.720@0.0.1280.720" timestamp="1586849946893" />
+    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587051737404">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="96" y="15" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1587051737404" />
+    <state x="422" y="116" key="FileChooserDialogImpl" timestamp="1586849551584">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="422" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1586849551584" />
+    <state x="143" y="4" key="SettingsEditor" timestamp="1586851841149">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="143" y="4" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1586851841149" />
+    <state x="336" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1586849603927">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="336" y="185" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1586849603927" />
   </component>
 </project>

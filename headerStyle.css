@@ -3,6 +3,7 @@ body
     background-color: rgb(135,206,230);
 
 }
+
 .langues
 {
     position: fixed;
@@ -17,7 +18,7 @@ body
 
     display: flex;
     justify-content: space-around;
-    font-family: "Gill Sans";
+    font-family: "Gill sans";
     background-color: #839BB9;
     height: 7em;
     position: fixed;
@@ -31,16 +32,18 @@ body
 .test
 {
     color: white;
-    text-decoration: none;
     position: relative;
     bottom: -70%;
+    text-decoration: none;
+
+
+
 
 }
 .test:hover
 {
 
     color: black;
-    
 
 }
 .introduction
@@ -57,17 +60,14 @@ body
 .LogoHeader
 {
     height: 7em;
-
-
-
-
 }
+
 .logoprofil
 {
-
     position: relative;
     bottom: -4.5em;
 }
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -102,6 +102,7 @@ body
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: Verdana;
 }
 
 /* Change color of dropdown links on hover */
