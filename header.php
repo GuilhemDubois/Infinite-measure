@@ -1,5 +1,6 @@
 
 <?php include('testlangue.php');
+include('bdd.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 

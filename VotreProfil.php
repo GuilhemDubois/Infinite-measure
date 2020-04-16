@@ -30,7 +30,7 @@
 
 <div id="formulaire">
 
-<form method="post" action="cible.php">
+<form method="post" action="bdd.php">
 
     <p>
 
