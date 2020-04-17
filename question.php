@@ -17,7 +17,8 @@
 <div id="formulaire">
     <form method="post">
         <p>
-            <input type="text" name="question" id="question" placeholder="Votre question">
+            <label for="zoneQuestion" id="entete"> Posez votre question : </label>
+            <textarea name="zoneQuestion" type="text" id="zoneQuestion" placeholder="Votre question"></textarea>
             <input type="submit" name="envoyer" id="envoyer">
         </p>
 
