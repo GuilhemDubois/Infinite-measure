@@ -14,15 +14,5 @@
 
     <?php include ('footer.php'); ?>
 
-<div id="formulaire">
-        <form method="post">
-            <p>
-                <input type="text" name="question" id="question" placeholder="Votre question">
-                <input type="submit" name="envoyer" id="envoyer">
-            </p>
-
-        </form>
-
-    </div>
 </body>
 </html>
