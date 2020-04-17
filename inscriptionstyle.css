@@ -6,7 +6,7 @@
     font-size: 1em;
     position: fixed;
     right: 44.5%;
-    bottom: 20%;
+    bottom: 15%;
     background-color: #839BB9;
     border: #839BB9;
     border-radius: 1em;
@@ -42,8 +42,7 @@
     font-size: 1em;
 
 }
-
-#email
+#identifiant
 {
 
     position: fixed;
@@ -54,8 +53,7 @@
     font-size: 1em;
 
 }
-
-#mdp
+#email
 {
 
     position: fixed;
@@ -67,7 +65,7 @@
 
 }
 
-#codepilote
+#mdp
 {
 
     position: fixed;
@@ -75,6 +73,18 @@
     width: 20%;
     right: 37.5%;
     bottom: 27%;
+    font-size: 1em;
+
+}
+
+#codepilote
+{
+
+    position: fixed;
+    height: 5%;
+    width: 20%;
+    right: 37.5%;
+    bottom: 20%;
     font-size: 1em;
 
 }

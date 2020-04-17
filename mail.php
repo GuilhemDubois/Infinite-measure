@@ -31,7 +31,7 @@
 
 
 
-<form method="post" action="cible.php" id="formulaire">
+<form method="post" action="bdd.php" id="formulaire">
 
 <textarea id="email" name="email" rows="15" cols="60">
 

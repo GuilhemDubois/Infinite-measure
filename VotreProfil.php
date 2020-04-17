@@ -14,12 +14,25 @@
 
 <body>
 
-<?php include('header.php'); ?>
+<?php include('header.php');
+?>
 
+<?php
+if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
+        $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ? ');
+        $req->execute([$_POST['identifiant']]);
+        $user = $req->fetch();
+        if (password_verify($_POST['mdp'],$user->mdp)) {
+            $_SESSION['auth'] = $user;
+            header('Location: eyeco.php');
+            exit();
+        }else{
+            echo'identifiant ou mdp non valide';
+        }
+    }
 
-<?php include('footer.php'); ?>
-
-
+ ?>
+debug($_SESSION['auth'])
 <p id="inscriptions">
 
 
@@ -30,15 +43,15 @@
 
 <div id="formulaire">
 
-<form method="post" action="cible.php">
+<form method="POST" action="">
 
     <p>
 
-        <input type="text" name="pseudo" id="pseudo" placeholder="Identifiant" size="28" maxlength="20" />
+        <input type="text" name="identifiant" id="pseudo" placeholder="Identifiant" size="28" maxlength="20" />
 
         <br />
 
-        <input type="password" name="pass" id="pass" placeholder="Mot de passe" size="20" maxlength="20"/>
+        <input type="password" name="mdp" id="pass" placeholder="Mot de passe" />
 
         </br>
 
@@ -61,7 +74,7 @@
 
 
 </div>
-
+<?php include('footer.php'); ?>
 
 </body>
 
