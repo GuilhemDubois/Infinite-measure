@@ -34,7 +34,7 @@ body
     text-decoration: none;
     position: relative;
     bottom: -70%;
-
+    font-family: Verdana;
 }
 .test:hover
 {

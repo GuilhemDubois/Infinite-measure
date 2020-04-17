@@ -17,18 +17,22 @@
 
     <?php include('header.php'); ?>
 
-    <div class="images">
-
-
-        <img src="images/menu%20(1).png" class="imageMenu" alt="Menu"/>
-        <img src="images/menu%20(2).png" class="imageMenu" alt="Menu"/>
-
-
+    <div class="conteneur">
+        <h2>Tests psychotechniques pour pilotes de ligne</h2>
+        <p> Nous évaluons vos compétences grâce à une batterie de test adapté à vos besoins </p>
     </div>
 
 
     <?php include('footer.php'); ?>
 
 </body>
+<!--
+<div class="images">
 
 
+    <img src="images/menu%20(1).png" class="imageMenu" alt="Menu"/>
+    <img src="images/menu%20(2).png" class="imageMenu" alt="Menu"/>
+
+
+</div>
+-->

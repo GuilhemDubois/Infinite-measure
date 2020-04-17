@@ -11,41 +11,41 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
     <a class ="test" href = "eyeco.php" title = "Accueil">
         <?php if ($_SESSION['langue'] == 'francais')
         {
-            echo "ACCUEIL";
+            echo "Accueil";
 
         }
         else
         {
-            echo "HOME";
+            echo "Home";
 
         }
         ?></a>
 
     <a class ="test" href = "NousConnaitre.php" title = "À propos"> <?php if ($_SESSION['langue'] == 'francais')
         {
-            echo "A PROPOS";
+            echo "A propos";
 
         }
         else
         {
-            echo "ABOUT US";
+            echo "About us";
 
         }
         ?></a>
 
     <a class ="test" href = "Resultats.php" title = "Vos résultats"> <?php if (($_SESSION['langue'] == 'francais') && (isset($_SESSION['auth'])))
         {
-            echo "RESULTATS";
+            echo "Resultat";
 
         }
         elseif (isset($_SESSION['auth'])){
 
-            echo "RESULTS";
+            echo "Resultat";
 
         }
         ?></a>
 
-    <a class ="test" href = "LesTests.php" title = "Passer les tests">TESTS</a>
+    <a class ="test" href = "LesTests.php" title = "Passer les tests">Test</a>
     <?php if(isset($_SESSION['auth'])): ?>
         <div class="bouton">
             <p>
