@@ -21,6 +21,7 @@
       <executable />
     </execution>
   </component>
+<<<<<<< Updated upstream
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -34,6 +35,14 @@
     </option>
     <expand />
     <select />
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+>>>>>>> Stashed changes
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,6 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,7 +71,12 @@
       <updated>1586619762025</updated>
       <workItem from="1586619763449" duration="139000" />
       <workItem from="1586849337111" duration="2063000" />
+<<<<<<< Updated upstream
       <workItem from="1587033628745" duration="10394000" />
+=======
+      <workItem from="1587121934305" duration="63000" />
+      <workItem from="1587121999734" duration="4074000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -69,9 +84,24 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
     <state x="240" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1587033628740">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587033628740" />
+=======
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587121996636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587121996636" />
+    <state x="-1126" y="443" key="NewPhpFileDialog" timestamp="1586853435920">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1126" y="443" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1586853435920" />
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587121934538">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587121934538" />
+>>>>>>> Stashed changes
   </component>
 </project>
