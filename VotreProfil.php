@@ -14,7 +14,8 @@
 
 <body>
 
-<?php include('header.php'); ?>
+<?php include('header.php');
+?>
 
 <?php
 if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
@@ -31,7 +32,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
     }
 
  ?>
-
+debug($_SESSION['auth'])
 <p id="inscriptions">
 
 
