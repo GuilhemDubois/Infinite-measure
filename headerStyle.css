@@ -3,6 +3,15 @@ body
     background-color: rgb(135,206,230);
 
 }
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .langues
 {
     position: fixed;
@@ -12,11 +21,10 @@ body
     top :1.5em;
 
 }
-.menu
+.menu /*logo*/
 {
-
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-family: "Gill Sans";
     background-color: #839BB9;
     height: 7em;
@@ -26,23 +34,58 @@ body
     left: 0;
     right: 0;
 
+}
+/* Navigation */
+
+nav
+{
+    display: felx;
+    display: center;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+
+    align-items: center;
+}
+
+nav li /*Espace entre les noms de pages*/
+{
+    margin-right: 30px;
 
 }
+
+nav a /*apparence et disposition des noms de page*/
+{
+    font-size: 1.3em;
+    font-family: "Verdana";
+    color: white;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: black;
+    border-bottom: 3px solid black;
+}
+/*
 .test
 {
     color: white;
     text-decoration: none;
     position: relative;
     bottom: -70%;
-    font-family: Verdana;
-}
+
+}*/
+
+/*
 .test:hover
 {
-
     color: black;
-    
-
 }
+
+ */
 .introduction
 {
 
@@ -54,14 +97,18 @@ body
 
 
 }
-.LogoHeader
+#LogoHeader /*Logo - Disposition du logo*/
 {
     height: 7em;
-
-
-
-
+   flex-direction: row;
+    align-items: baseline;
 }
+#LogoHeader img /*Taille du logo*/
+{
+    width: 99px;
+    heigh:100px;
+}
+
 .logoprofil
 {
 
