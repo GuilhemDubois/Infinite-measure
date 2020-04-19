@@ -1,0 +1,23 @@
+#envoyer{
+    position: fixed;
+    height: 5%;
+    width: 10%;
+    bottom: 15%;
+    right: 75.3%;
+    font-size: 1em;
+}
+#zoneQuestion {
+    position: fixed;
+    height: 55%;
+    width: 70%;
+    bottom: 20%;
+    right: 15%;
+    font-size: 1.5em;
+}
+#entete {
+    position: fixed;
+    width: 70%;
+    bottom: 76%;
+    right: 15%;
+    font-size: 1.3em;
+}
