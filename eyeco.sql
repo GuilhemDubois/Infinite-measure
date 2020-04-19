@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 19 avr. 2020 à 19:22
+-- Généré le :  Dim 19 avr. 2020 à 21:55
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS `faq`;
 CREATE TABLE IF NOT EXISTS `faq` (
   `idQuestion` int(11) NOT NULL AUTO_INCREMENT,
   `identifiant` varchar(255) NOT NULL,
-  `date` date NOT NULL,
+  `jour` date NOT NULL,
   `question` text NOT NULL,
   `reponse` text DEFAULT NULL,
   PRIMARY KEY (`idQuestion`)
@@ -42,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `faq` (
 -- Déchargement des données de la table `faq`
 --
 
-INSERT INTO `faq` (`idQuestion`, `identifiant`, `date`, `question`, `reponse`) VALUES
-(5, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', NULL),
-(6, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', NULL);
+INSERT INTO `faq` (`idQuestion`, `identifiant`, `jour`, `question`, `reponse`) VALUES
+(5, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', 'le temps qu\'il faut\r\n'),
+(6, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', 'Chépa');
 
 -- --------------------------------------------------------
 
