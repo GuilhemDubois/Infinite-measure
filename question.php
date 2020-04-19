@@ -20,7 +20,7 @@
         if(!empty($_POST)) {
 
             require_once 'bdd.php';
-            $req = $pdo->prepare("INSERT INTO faq SET identifiant= ?, date = ?, question = ?");
+            $req = $pdo->prepare("INSERT INTO faq SET identifiant= ?, jour = ?, question = ?");
             $req->execute([$re, $date, $_POST['zoneQuestion']]);
         }
         ?>
