@@ -2,106 +2,77 @@
 footer
 {
     background-color: #839BB9;
-
-
+    display :flex;
     position: fixed;
+    justify-content: space-around;
     bottom: 0;
     left: 0;
     right: 0;
-    font-weight: bold;
-    font-family: gill sans;
+    padding-top: 10px;
     color: white;
-
-
+    font-family: Verdana;
 }
-.basdepage
+
+footer p, footer ul
+{
+    font-size :0,7em;
+}
+
+footer h2
+{
+    font-size:1.1em;
+}
+
+#contact
 {
 
-    font-size: 0.6em;
-    width: 0em;
-    font-weight: normal;
 
-}
-#conteneur3
-{
-
-    display: flex;
     flex-direction: column;
-    width: 13em;
 
 }
-.testeux
-{
-    color: white;
-    font-family: gill sans;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 0.8em;
 
-}
-.Mentions
-{
-    color: white;
-    font-family: gill sans;
-    text-decoration: underline;
-    font-weight: normal;
-    font-size: 0.6em;
-    color: blue;
-
-}
-.Mentions:hover
+#menuenbas
 {
 
-    color: navy;
-}
-.testeux:hover
-{
-
-    color: black;
-
-
-}
-.testeux:active
-{
-
-
-    color: rgb(80,80,80);
-
-}
-.menuenbas
-{
-
-    display: flex;
     flex-direction: column;
     text-align: center;
-    font-weight: normal;
 }
-.ensemble
-{
 
-    display: flex;
-    justify-content: space-between;
+#menuenbas a
+{
+    text-decoration: none;
+    color: white;
+
+}
+#menuenbas ul
+{
+    list-style-type: none;
+}
+#menuenbas :hover
+{
+    color: black;
+}
+
+#logofooter img
+{
+    text-align: center;
+    margin-top: 40px;
+
 
 }
 .mail
 {
-
     color: white;
-    font-family: gill sans;
     text-decoration: underline;
-    font-weight: normal;
-    color: blue;
 }
 .mail:hover
 {
-
-    color: navy;
-
+    color: black;
 }
-.barrefooter
+
+.Mentions
 {
-
-    height: 0em;
-
-
+    font-size: 0.6em;
 }
+
+
