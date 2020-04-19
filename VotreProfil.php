@@ -29,7 +29,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
         }else{
             echo'Identifiant ou mdp non valide';
         }
-    }else{
+    }elseif(!empty($_POST)){
     echo'Veuillez remplir les informations';
 }
 
