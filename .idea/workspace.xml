@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4ab21c9-a28b-4cce-ae5c-5b4b4bc6a741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eyecoStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/eyecoStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VotreProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/VotreProfil.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,7 @@
       <workItem from="1587126172443" duration="1457000" />
       <workItem from="1587129222979" duration="534000" />
       <workItem from="1587129890223" duration="4799000" />
+      <workItem from="1587322570455" duration="453000" />
     </task>
     <servers />
   </component>
