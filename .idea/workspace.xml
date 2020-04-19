@@ -64,10 +64,11 @@
       <workItem from="1586849337111" duration="2063000" />
       <workItem from="1587033628745" duration="10394000" />
       <workItem from="1587060984497" duration="6817000" />
-      <workItem from="1587126172443" duration="1457000" />
-      <workItem from="1587129222979" duration="534000" />
-      <workItem from="1587129890223" duration="4799000" />
-      <workItem from="1587322570455" duration="545000" />
+      <workItem from="1587126172443" duration="2211000" />
+      <workItem from="1587130732395" duration="853000" />
+      <workItem from="1587132300404" duration="2523000" />
+      <workItem from="1587162133256" duration="423000" />
+      <workItem from="1587321893198" duration="1479000" />
     </task>
     <servers />
   </component>
@@ -88,12 +89,13 @@
     </state>
     <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1587061156048" />
     <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1587126572340" />
-    <state x="240" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1587322579888">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="755" y="439" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587133140826" />
+    <state x="300" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587322113548">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="200" y="252" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1587129890021" />
     <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1587061024478" />
-    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587322579888" />
-    <state x="300" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587132300235" />
+    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587126181644" />
+    <state x="300" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587322113548" />
   </component>
 </project>
