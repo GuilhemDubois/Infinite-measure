@@ -11,6 +11,52 @@
 
 <body>
     <?php include ('header.php'); ?>
+    <br><br><br><br><br><br>
+    <?php
+    $req = $pdo->prepare('SELECT question,reponse FROM faq WHERE reponse IS NOT NULL ');
+    $req->execute();
+    $questions = $req->fetch();
+    $numero=array('');
+    ?>
+    <div class="Question">
+        <h1>FAQ </h1>
+        <ul>
+            <?php foreach($questions as $ya): array_push($numero,$ya) ;?>
+            <?php endforeach;?>
+            <?php for ($i = 1; $i <= (array_key_last($numero)-1); $i= $i+2): ;?>
+                <h1>nanaaiainaaninainai </h1>
+            <ul>
+                <h1>Question </h1>
+                <li> <?php echo $numero[$i]; ?>               </li>
+                <h1>Réponse </h1>
+                <li> <?php echo $numero[$i+1]; ?>               </li>
+            </ul>
+            <?php endfor; ?>
+
+
+
+
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <?php include ('footer.php'); ?>
 
