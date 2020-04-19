@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 16 avr. 2020 à 13:40
--- Version du serveur :  5.6.11
+-- Généré le :  Dim 19 avr. 2020 à 19:22
+-- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -30,13 +30,21 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `faq`;
 CREATE TABLE IF NOT EXISTS `faq` (
-  `id Faq` int(11) NOT NULL AUTO_INCREMENT,
-  `id Utilisateur` int(11) NOT NULL,
+  `idQuestion` int(11) NOT NULL AUTO_INCREMENT,
+  `identifiant` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `question` text NOT NULL,
-  `reponse` text NOT NULL,
-  PRIMARY KEY (`id Faq`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `reponse` text DEFAULT NULL,
+  PRIMARY KEY (`idQuestion`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `faq`
+--
+
+INSERT INTO `faq` (`idQuestion`, `identifiant`, `date`, `question`, `reponse`) VALUES
+(5, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', NULL),
+(6, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', NULL);
 
 -- --------------------------------------------------------
 
@@ -70,17 +78,18 @@ CREATE TABLE IF NOT EXISTS `user` (
   `email` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `codepilote` int(11) NOT NULL,
-  `admin` tinyint(1) DEFAULT NULL,
+  `admin` tinyint(1) DEFAULT 0,
   `identifiant` varchar(255) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`id_user`, `nom`, `prenom`, `email`, `mdp`, `codepilote`, `admin`, `identifiant`) VALUES
-(4, 'guilhem', 'Dubois', 'guilhem.dubois@isep.fr', '$2y$10$gz.3DAtBXkWXoFxt5HpiD.prqhpDRPskXkN8PbZYwlqxys8IbrZUO', 2, NULL, 'guigui');
+(4, 'guilhem', 'Dubois', 'guilhem.dubois@isep.fr', '$2y$10$gz.3DAtBXkWXoFxt5HpiD.prqhpDRPskXkN8PbZYwlqxys8IbrZUO', 2, 1, 'guigui'),
+(5, 'Saraiva', 'Philippe', 'philippe.saraiva@isep.fr', '$2y$10$fWg0x2O6v9K.hm08fduameabFGhYVDhyir5.MxG/f1p2NmnSYJ3WS', 3, 0, 'phiphi');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
