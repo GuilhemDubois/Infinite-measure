@@ -13,7 +13,7 @@
     <?php include ('header.php'); ?>
     <br><br><br><br><br><br>
     <?php
-    $req = $pdo->prepare('SELECT question,reponse,identifiant, jour FROM faq WHERE reponse IS NOT NULL ');
+    $req = $pdo->prepare('SELECT question,reponse,identifiant,jour FROM faq WHERE reponse IS NOT NULL ');
     $req->execute();
     $allQuesEtResp = $req->fetchAll();
 
