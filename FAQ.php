@@ -24,7 +24,7 @@
             <?php foreach($questions as $ya): array_push($numero,$ya) ;?>
             <?php endforeach;?>
             <?php for ($i = 1; $i <= (array_key_last($numero)-1); $i= $i+2): ;?>
-                <h1>nanaaiainaaninainai </h1>
+                
             <ul>
                 <h1>Question </h1>
                 <li> <?php echo $numero[$i]; ?>               </li>
