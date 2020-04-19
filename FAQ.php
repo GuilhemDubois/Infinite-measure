@@ -15,14 +15,19 @@
     <?php
     $req = $pdo->prepare('SELECT question,reponse FROM faq WHERE reponse IS NOT NULL ');
     $req->execute();
-    $questions = $req->fetch();
-    $numero=array('');
+    $questions = $req->fetchAll();
+
+
     ?>
     <div class="Question">
         <h1>FAQ </h1>
         <ul>
-            <?php foreach($questions as $ya): array_push($numero,$ya) ;?>
-            <?php endforeach;?>
+            <?php foreach($questions as $ya):    ;
+            $numero=array(''); ?>
+
+            <?php foreach($ya as $yaa): array_push($numero,$yaa) ;?>
+            <?php endforeach;
+           ;?>
             <?php for ($i = 1; $i <= (array_key_last($numero)-1); $i= $i+2): ;?>
                 
             <ul>
@@ -31,8 +36,9 @@
                 <h1>Réponse </h1>
                 <li> <?php echo $numero[$i+1]; ?>               </li>
             </ul>
-            <?php endfor; ?>
-
+            <?php endfor;
+            unset($numero);?>
+            <?php endforeach;?>
 
 
 
