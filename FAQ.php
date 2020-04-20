@@ -34,7 +34,7 @@
 
                 Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
                 <?php echo $listQuestions[1]; ?><br>
-                <?php echo $listQuestions[2]; ?><br><br>
+                <?php echo $listQuestions[2]; ?><br><br><br><br>
 
 
             </div>
