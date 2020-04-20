@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ab21c9-a28b-4cce-ae5c-5b4b4bc6a741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/reponse.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FAQ.css" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FAQ.php" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question.css" beforeDir="false" afterPath="$PROJECT_DIR$/question.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,11 +120,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1587136174022" />
-    <state x="604" y="365" key="NewPhpFileDialog" timestamp="1587126572340">
+    <state x="604" y="365" key="NewPhpFileDialog" timestamp="1587396610505">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1587061156048" />
-    <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1587126572340" />
+    <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1587396610505" />
     <state x="755" y="439" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587133140826" />
     <state x="300" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1587379839178">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -21,7 +21,7 @@
     ?>
     <div class="Question">
         <h1 class="titreFAQ">FAQ :</h1>
-        <ul>
+
             <?php foreach($allQuesEtResp as $questionEtSaRep):    
             $listQuestions=array(''); ?>
 
@@ -39,16 +39,10 @@
 
             </div>
 
-
-
-
-
-
-
-
-
             <?php unset($listQuestions);?>
             <?php endforeach;?>
+
+
             <?php if(isset($_SESSION['auth'])): ?>
                 <?php $admi=$_SESSION['auth']->admin  /*TEST authentifier*/?>
                 <?php if($admi=1): /* Test admin */ ?>
@@ -63,10 +57,6 @@
             <?php if(!isset($_SESSION['auth'])):  ?>
                 <a class = "askquest" href = "VotreProfil.php" title = "Poser Question">Poser Question</a>
             <?php endif; ?>
-
-
-
-        </ul>
     </div>
 
 
