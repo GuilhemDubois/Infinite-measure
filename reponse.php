@@ -44,7 +44,7 @@ $questionEtSaRep = $req->fetch();
 
             </div>
 </div>
-    <?php 
+    <?php
     if(!empty($_POST) && isset($_POST['zoneQuestion']) ) {
 
     require_once 'bdd.php';
