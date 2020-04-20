@@ -11,7 +11,7 @@
     <body>
         <?php include ('header.php'); ?>
 
-        <?php include ('footer.php'); ?>
+
 
         <?php
         $date = date("y-m-d");
@@ -37,4 +37,5 @@
 
         </div>
     </body>
+    <?php include ('footer.php'); ?>
 </html>

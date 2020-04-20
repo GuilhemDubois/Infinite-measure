@@ -61,7 +61,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                 <?php if(!isset($_SESSION['auth'])): ?>
                     <a href="VotreProfil.php"><img class="logoprofil" src="images/profil.png" alt="Profil" title="Votre Profil" /></a>
                 <?php endif; ?>
-
+                <li><a href = "FAQ.php" title = "FAQ">FAQ</a></li>
                 <li>
                     <div class="dropdown">
                         <button class="dropbtn">

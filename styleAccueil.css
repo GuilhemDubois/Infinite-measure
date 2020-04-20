@@ -3,9 +3,9 @@
 {
 
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2.5em;
     position: fixed;
-    right: 46%;
+    right: 41%;
     bottom: 40%;
     background-color: #839BB9;
     border: #839BB9;
@@ -46,9 +46,9 @@ background-color: #636A85;
 {
 
     color: white;
-    font-size: 0.8em;
+    font-size: 2em;
     position: fixed;
-    right: 47%;
+    right: 44%;
     top: 61%;
 }
 .sinscrire:hover {
@@ -63,7 +63,7 @@ background-color: #636A85;
     font-size: 1.2em;
     position: fixed;
     bottom: 60%;
-    right: 38.5%;
+    right: 39.5%;
 
 
 }

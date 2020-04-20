@@ -3,10 +3,10 @@
 {
 
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2em;
     position: fixed;
-    right: 44.5%;
-    bottom: 15%;
+    right: 43.5%;
+    bottom: 25%;
     background-color: #839BB9;
     border: #839BB9;
     border-radius: 1em;
@@ -26,7 +26,7 @@
     position: fixed;
     height: 5%;
     width: 20%;
-    bottom: 55%;
+    bottom: 65%;
     right: 37.5%;
     font-size: 1em;
 
@@ -38,7 +38,7 @@
     height: 5%;
     width: 20%;
     right: 37.5%;
-    bottom: 48%;
+    bottom: 58%;
     font-size: 1em;
 
 }
@@ -49,7 +49,7 @@
     height: 5%;
     width: 20%;
     right: 37.5%;
-    bottom: 41%;
+    bottom: 51%;
     font-size: 1em;
 
 }
@@ -60,7 +60,7 @@
     height: 5%;
     width: 20%;
     right: 37.5%;
-    bottom: 34%;
+    bottom: 44%;
     font-size: 1em;
 
 }
@@ -72,7 +72,7 @@
     height: 5%;
     width: 20%;
     right: 37.5%;
-    bottom: 27%;
+    bottom: 37%;
     font-size: 1em;
 
 }
@@ -84,19 +84,19 @@
     height: 5%;
     width: 20%;
     right: 37.5%;
-    bottom: 20%;
+    bottom: 30%;
     font-size: 1em;
 
 }
 
-#titreinscription
+.titreinscription
 {
 
     color: white;
     font-family: "Gill Sans";
     font-size: 1.2em;
     position: fixed;
-    bottom: 60%;
+    top: 25%;
     right: 43.5%;
 
 

@@ -58,7 +58,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
         </br>
 
 
-        <input class="envoyer" type="submit" value="Envoyer" />
+        <input class="envoyer" type="submit" value="Connexion" />
 
 
 
