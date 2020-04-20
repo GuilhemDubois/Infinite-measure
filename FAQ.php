@@ -38,24 +38,7 @@
 
 
             </div>
-                <div class="questionEtReponse">
 
-
-                    Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
-                    <?php echo $listQuestions[1]; ?><br>
-                    <?php echo $listQuestions[2]; ?><br><br><br><br>
-
-
-                </div>
-                <div class="questionEtReponse">
-
-
-                    Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
-                    <?php echo $listQuestions[1]; ?><br>
-                    <?php echo $listQuestions[2]; ?><br><br><br><br>
-
-
-                </div>
 
 
 
@@ -66,7 +49,20 @@
 
             <?php unset($listQuestions);?>
             <?php endforeach;?>
+            <?php if(isset($_SESSION['auth'])): ?>
+                <?php $admi=$_SESSION['auth']->admin  /*TEST authentifier*/?>
+                <?php if($admi=1): /* Test admin */ ?>
+                    <a class = "askquest" href = "reponse.php" title = "Repondre Question">Repondre Question</a>
+                <?php endif; ?>
+                <?php if($admi=0): /* Test non admin */ ?>
+                    <a class = "askquest" href = "question.php" title = "Repondre Question">Poser Question</a>
+                <?php endif; ?>
 
+            <?php endif; ?>
+
+            <?php if(!isset($_SESSION['auth'])):  ?>
+                <a class = "askquest" href = "VotreProfil.php" title = "Poser Question">Poser Question</a>
+            <?php endif; ?>
 
 
 
