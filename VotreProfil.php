@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<br><br><br><br><br><br><br><br>
 <?php include('header.php');
 ?>
 
@@ -27,12 +27,14 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
             header('Location: eyeco.php');
             exit();
         }else{
-            echo'identifiant ou mdp non valide';
+            echo'Identifiant ou mdp non valide';
         }
-    }
+    }elseif(!empty($_POST)){
+    echo'Veuillez remplir les informations';
+}
 
  ?>
-debug($_SESSION['auth'])
+
 <p id="inscriptions">
 
 

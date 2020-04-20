@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="inscriptionstyle.css"/>
 </head>
 <body>
-
+<br><br><br><br><br><br><br>
 
 <?php include('header.php'); ?>
 

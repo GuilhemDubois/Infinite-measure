@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>Foire aux questions</title>
-    <link rel="stylesheet" href="headerStyle.css"/>
-    <link rel="stylesheet" href="footerStyle.css"/>
-    <link rel="stylesheet" href="question.css"/>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>Foire aux questions</title>
+        <link rel="stylesheet" href="headerStyle.css"/>
+        <link rel="stylesheet" href="footerStyle.css"/>
+        <link rel="stylesheet" href="question.css"/>
+    </head>
 
+    <body>
+        <?php include ('header.php'); ?>
 
-<body>
-<?php include ('header.php'); ?>
+        <?php include ('footer.php'); ?>
 
-<?php include ('footer.php'); ?>
+        <?php
+        $date = date("y-m-d");
+        $re=$_SESSION['auth']->identifiant;
 
-<div id="formulaire">
-    <form method="post">
-        <p>
-            <label for="zoneQuestion" id="entete"> Posez votre question : </label>
-            <textarea name="zoneQuestion" type="text" id="zoneQuestion" placeholder="Votre question"></textarea>
-            <input type="submit" name="envoyer" id="envoyer">
-        </p>
+        if(!empty($_POST)) {
 
-    </form>
+            require_once 'bdd.php';
+            $req = $pdo->prepare("INSERT INTO faq SET identifiant= ?, jour = ?, question = ?");
+            $req->execute([$re, $date, $_POST['zoneQuestion']]);
+        }
+        ?>
 
-</div>
-</body>
+        <div id="formulaire">
+            <form method="post">
+                <p>
+                    <label for="zoneQuestion" id="entete"> Posez votre question :</label>
+                    <textarea name="zoneQuestion" type="text" id="zoneQuestion" placeholder="Votre question"></textarea>
+                    <input type="submit" name="envoyer" id="envoyer">
+                </p>
+
+            </form>
+
+        </div>
+    </body>
 </html>
