@@ -38,7 +38,24 @@
 
 
             </div>
+                <div class="questionEtReponse">
 
+
+                    Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
+                    <?php echo $listQuestions[1]; ?><br>
+                    <?php echo $listQuestions[2]; ?><br><br><br><br>
+
+
+                </div>
+                <div class="questionEtReponse">
+
+
+                    Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
+                    <?php echo $listQuestions[1]; ?><br>
+                    <?php echo $listQuestions[2]; ?><br><br><br><br>
+
+
+                </div>
 
 
 
@@ -65,7 +82,7 @@
 
 
 
-
+    <br /><br /><br /><br /><br /><br />
 
 
 

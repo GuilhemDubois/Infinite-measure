@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a4ab21c9-a28b-4cce-ae5c-5b4b4bc6a741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LesTestsCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/LesTestsCSS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VotreProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/VotreProfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscriptionstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/inscriptionstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styleAccueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/styleAccueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FAQ.php" beforeDir="false" afterPath="$PROJECT_DIR$/FAQ.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/footerStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
