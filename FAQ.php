@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Foire aux allQuesEtResp</title>
+    <title>Foire aux questions</title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="FAQ.css"/>
@@ -20,7 +20,7 @@
 
     ?>
     <div class="Question">
-        <h1>FAQ </h1>
+        <h1 class="titreFAQ">FAQ :</h1>
         <ul>
             <?php foreach($allQuesEtResp as $questionEtSaRep):    
             $listQuestions=array(''); ?>
@@ -28,15 +28,25 @@
             <?php foreach($questionEtSaRep as $questionPuisSaRep): array_push($listQuestions,$questionPuisSaRep) ;?>
             <?php endforeach;
             ?>
-                
-            <ul>
-                <h1>Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?></h1>
-                <li> <?php echo $listQuestions[1]; ?>               </li>
 
-                <h1>Réponse </h1>
-                <li> <?php echo $listQuestions[2]; ?>               </li>
+            <div class="questionEtReponse">
 
-            </ul>
+
+                Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
+                <?php echo $listQuestions[1]; ?><br>
+                <?php echo $listQuestions[2]; ?><br><br>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
             <?php unset($listQuestions);?>
             <?php endforeach;?>
 
