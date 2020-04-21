@@ -14,7 +14,7 @@
 
         }
         ?></title>
-    <link rel="stylesheet" href="headerStyle.css"/>
+
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="NousConnaitreStyle.css"/>
 
