@@ -3,89 +3,42 @@
 include('bdd.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
-<header>
-    <div class="menu" id="conteneur">
-        <div id="LogoHeader">
-            <a  href="eyeco.php"><img src="images/logopetitpetit.png" alt="Menu"/></a>
+<header role="header">
+
+    <nav class="menu" role="navigation">
+
+        <div class="inner">
+
+
+            <div class="m-nav-toggle">
+                    <span class="m-toggle-icon">
+
+                    </span>
+            </div>
+
+            <div class="m-left-logo">
+                <a href="#"><img src="images/logopetitpetit.png"/></a>
+            </div>
+
+            <div class="m-left">
+                <h1 class="logo">Eyeco</h1>
+            </div>
+
+            <div class="m-right">
+                <a href="#" class="m-link"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#" class="m-link"><i class="fas fa-chart-line"></i> Les tests</a>
+                <a href="#" class="m-link"><i class="fas fa-tachometer-alt"></i> Vos résultat</a>
+                <a href="#" class="m-link"><i class="far fa-question-circle"></i> A propos</a>
+                <a href="#" class="m-link"><i class="fas fa-user"></i> Mon profil</a>
+                <button class="button-language">Langues</button>
+            </div>
+
+
         </div>
 
-        <nav>
-            <ul>
-                <li><a href = "eyeco.php" title = "Accueil">
-                        <?php if ($_SESSION['langue'] == 'francais')
-                        {
-                            echo "Accueil";
+    </nav>
 
-                        }
-                        else
-                        {
-                            echo "Home";
-
-                        }
-                        ?></a></li>
-
-                <li><a href = "NousConnaitre.php" title = "À propos"> <?php if ($_SESSION['langue'] == 'francais')
-                        {
-                            echo "A propos";
-
-                        }
-                        else
-                        {
-                            echo "About us";
-
-                        }
-                        ?></a></li>
-
-                <li><a href = "Resultats.php" title = "Vos résultats"> <?php if (($_SESSION['langue'] == 'francais') && (isset($_SESSION['auth'])))
-                        {
-                            echo "Resultat";
-
-                        }
-                        elseif (isset($_SESSION['auth'])){
-
-                            echo "Resultat";
-
-                        }
-                        ?></a></li>
-
-                <li><a href = "LesTests.php" title = "Passer les tests">Test</a></li>
-
-                <?php if(isset($_SESSION['auth'])): ?>
-                    <div class="bouton">
-                        <p>
-                            <a href="logout.php">Déconnexion</a>
-                        </p>
-                    </div>
-                <?php endif; ?>
-
-                <?php if(!isset($_SESSION['auth'])): ?>
-                    <a href="VotreProfil.php"><img class="logoprofil" src="images/profil.png" alt="Profil" title="Votre Profil" /></a>
-                <?php endif; ?>
-                <li><a href = "FAQ.php" title = "FAQ">FAQ</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <?php echo($_SESSION['langue'])?>
-                        </button>
-
-                        <div class="dropdown-content">
-                            <a href="changelangue.php">Francais</a>
-                            <a href="changelangue.php">English</a>
-                        </div>
-                </li>
-
-
-                </div>
-
-
-            </ul>
-
-        </nav>
-
-    </div>
 </header>
-
-
 
 
 
