@@ -2,6 +2,9 @@
 <?php include('testlangue.php');
 include('bdd.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
+<meta charset="UTF-8">
+<title>S'inscrire</title>
+<link rel="stylesheet" href="headerStyle.css"/>
 
 <header role="header">
 
