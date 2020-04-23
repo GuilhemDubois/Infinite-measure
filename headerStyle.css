@@ -1,8 +1,8 @@
 .menu{/*nav du header*/
     width:100%;
-    height:66px;
+    height:11%;
     background: cornflowerblue;
-    line-height: 66px;
+    line-height: 440%;
 }
 .m-left-logo{/*logo*/
     float: left;
@@ -13,12 +13,12 @@
 }
 .logo{/*Gros titre eyeco*/
     margin:0;padding: 0;
-    margin-left: 25px;
+    margin-left: 20%;
     color:white;
     text-transform: uppercase;
     font-family: 'Roboto';
     font-weight: 900;
-    font-size : 35px;
+    font-size : 220%;
     letter-spacing: 1px;
 }
 .m-right{/*Div droite du header*/
@@ -29,10 +29,10 @@
     color:white;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 0;margin: 0 8px;
+    padding: 0;margin: 0 10px;
     transition: all 0.3s ease-in-out; /*durée du hover*/
     border-bottom: 2px solid transparent; /*permet de moins ralentir le navigateur*/
-    padding-bottom: 3px;
+    padding-bottom: 1%;
 }
 .m-link:hover{/*Hover des noms de page*/
     border-bottom: 2px solid white;
