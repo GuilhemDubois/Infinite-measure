@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="styleAccueil.css"/>
-
+    <link rel="stylesheet" href="normalize.css"/>
 
 </head>
 
 <body>
 
-<?php include('header.php');?>
 
+<?php include('header.php');?>
 
 <?php
 if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
