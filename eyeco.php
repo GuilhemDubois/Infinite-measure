@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="eyecoStyle.css"/>
     <link rel="stylesheet" href="normalize.css"/>
-
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
 

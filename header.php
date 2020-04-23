@@ -4,7 +4,7 @@ include('bdd.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 <meta charset="UTF-8">
 <title>S'inscrire</title>
-<link rel="stylesheet" href="headerStyle.css"/>
+
 
 <header role="header">
 
@@ -33,9 +33,9 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                 <a href="Resultats.php" class="m-link"><i class="fas fa-tachometer-alt"></i> Vos résultat</a>
                 <a href="NousConnaitre.php" class="m-link"><i class="far fa-question-circle"></i> A propos</a>
                 <a href="VotreProfil.php" class="m-link"><i class="fas fa-user"></i> Mon profil</a>
-                <button class="button-language">Langues</button>
+                <a href="changelangue.php" class="m-link"><i class="fas fa-user"></i> Langues</a>
             </div>
-
+            <?php echo $_SESSION['langue']; ?>
 
         </div>
 
