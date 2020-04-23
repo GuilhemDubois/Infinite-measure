@@ -13,9 +13,9 @@
 </head>
 
 <body>
-<br><br><br><br><br><br><br><br>
-<?php include('header.php');
-?>
+
+<?php include('header.php');?>
+
 
 <?php
 if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
@@ -34,7 +34,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
 }
 
  ?>
-
+<div>
 <p id="inscriptions">
 
 
@@ -42,7 +42,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
 
 
 </p>
-
+</div>
 <div id="formulaire">
 
 <form method="POST" action="">
@@ -76,8 +76,10 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
 
 
 </div>
-<?php include('footer.php'); ?>
+
+
 
 </body>
-
-
+<footer>
+<?php include('footer.php'); ?>
+</footer>
