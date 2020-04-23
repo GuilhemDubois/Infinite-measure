@@ -39,7 +39,8 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                 <li><a href = "Resultats.php" title = "Vos résultats"> <?php if (($_SESSION['langue'] == 'francais') && (isset($_SESSION['auth'])))
                         {
                             echo "Resultat";
-
+                        }
+                        ?></a></li>
 
             <div class="m-right">
                 <a href="eyeco.php" class="m-link"><i class="fas fa-home"></i> Accueil</a>
@@ -51,46 +52,13 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
             </div>
 
 
-                            echo "Resultat";
-
-                        }
-                        ?></a></li>
-
-                <li><a href = "LesTests.php" title = "Passer les tests">Test</a></li>
-
-                <?php if(isset($_SESSION['auth'])): ?>
-                    <div class="bouton">
-                        <p>
-                            <a href="logout.php">Déconnexion</a>
-                        </p>
-                    </div>
-                <?php endif; ?>
-
-                <?php if(!isset($_SESSION['auth'])): ?>
-                    <a href="VotreProfil.php"><img class="logoprofil" src="images/profil.png" alt="Profil" title="Votre Profil" /></a>
-                <?php endif; ?>
-                <li><a href = "FAQ.php" title = "FAQ">FAQ</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">
-                            <?php echo($_SESSION['langue'])?>
-                        </button>
-
-                        <div class="dropdown-content">
-                            <a href="changelangue.php">Francais</a>
-                            <a href="changelangue.php">English</a>
-                        </div>
-                </li>
-
 
                 </div>
 
 
-            </ul>
-
         </nav>
 
-    </div>
+
 </header>
 
 
