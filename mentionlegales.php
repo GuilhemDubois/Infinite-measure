@@ -1,56 +1,33 @@
-<!DOCTYPE html>
-
-<html>
 <head>
-    <!-- En-tête de la page -->
 
-
-    <meta charset="utf-8" /> <!-- Doctype : il s'agit d'une page HTML -->
-    <title>Mentions légales</title> <!-- Titre de la page -->
+    <meta charset="utf-8" />
+    <title>Eyeco</title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="mentionlegalesStyle.css"/>
+    <link rel="stylesheet" href="normalize.css"/>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
 
 </head>
 
 <body>
 
+    <?php include('Header.php'); ?>
 
+    <div class="CGU">
+        <div id="c-title">
+            <h2>Conditions générales d'utilisation</h2>
+        </div>
+    </div>
 
-<?php include('header.php'); ?>
+    <div class="c-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
 
+    </div>
+    <?php include('Footer.php'); ?>
 
-<?php include('footer.php'); ?>
-
-
-<section class="mentionlegales" id="miseenpage">
-
-
-
-    <br><h2> Mentions Légales</h2><br>
-    _____________<br><br><br>
-
-    Eyeco<br>
-    SARL au capital de 12 000 000 €<br>
-    28 rue Notre Dame des Champs<br>
-    75006 Paris<br>
-    RCS Paris N°442 248 258
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="app.js" charset="utf-8"></script>
 </body>
-
-
-</html>

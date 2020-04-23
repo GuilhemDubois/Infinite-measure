@@ -2,72 +2,47 @@
 <?php include('testlangue.php');
 include('bdd.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
+<meta charset="UTF-8">
+<title>S'inscrire</title>
+<link rel="stylesheet" href="headerStyle.css"/>
+
+<header role="header">
+
+    <nav class="menu" role="navigation">
+
+        <div class="inner">
 
 
+            <div class="m-nav-toggle">
+                    <span class="m-toggle-icon">
 
-<div class="menu" id="conteneur">
-    <a  href="eyeco.php"><img class="LogoHeader" src="images/logopetitpetit.png" alt="Menu"/></a>
+                    </span>
+            </div>
 
-    <a class ="test" href = "eyeco.php" title = "Accueil">
-        <?php if ($_SESSION['langue'] == 'francais')
-        {
-            echo "ACCUEIL";
+            <div class="m-left-logo">
+                <a href="eyeco.php"><img src="images/logopetitpetit.png"/></a>
+            </div>
 
-        }
-        else
-        {
-            echo "HOME";
+            <div class="m-left">
+                <h1 class="logo">Eyeco</h1>
+            </div>
 
-        }
-        ?></a>
-
-    <a class ="test" href = "NousConnaitre.php" title = "À propos"> <?php if ($_SESSION['langue'] == 'francais')
-        {
-            echo "A PROPOS";
-
-        }
-        else
-        {
-            echo "ABOUT US";
-
-        }
-        ?></a>
-
-    <a class ="test" href = "Resultats.php" title = "Vos résultats"> <?php if ($_SESSION['langue'] == 'francais')
-        {
-            echo "RESULTATS";
-
-        }
-        else
-        {
-            echo "RESULTS";
-
-        }
-        ?></a>
-
-    <a class ="test" href = "LesTests.php" title = "Passer les tests">TESTS</a>
-
-    <a href="VotreProfil.php"><img class="logoprofil" src="images/profil.png" alt="Profil" title="Votre Profil" /></a>
-
-</div>
+            <div class="m-right">
+                <a href="eyeco.php" class="m-link"><i class="fas fa-home"></i> Accueil</a>
+                <a href="LesTests.php" class="m-link"><i class="fas fa-chart-line"></i> Les tests</a>
+                <a href="Resultats.php" class="m-link"><i class="fas fa-tachometer-alt"></i> Vos résultat</a>
+                <a href="NousConnaitre.php" class="m-link"><i class="far fa-question-circle"></i> A propos</a>
+                <a href="VotreProfil.php" class="m-link"><i class="fas fa-user"></i> Mon profil</a>
+                <button class="button-language">Langues</button>
+            </div>
 
 
+        </div>
+
+    </nav>
+
+</header>
 
 
-
-
-
-
-
-
-<div class="dropdown">
-    <button class="dropbtn">
-        <?php echo($_SESSION['langue'])?>
-    </button>
-    <div class="dropdown-content">
-        <a href="changelangue.php">francais</a>
-        <a href="changelangue.php">english</a>
-    </div>
-</div>
 
 

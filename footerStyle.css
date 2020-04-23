@@ -1,107 +1,95 @@
-
-footer
-{
-    background-color: #839BB9;
-
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-weight: bold;
-    font-family: gill sans;
-    color: white;
+*{/*all*/
+    margin:0;padding: 0;
 
 
 }
-.basdepage
-{
-
-    font-size: 0.6em;
-    width: 0em;
-    font-weight: normal;
-
+footer{
+    width: 100%;
+    background: cornflowerblue;
+    display: block;
 }
-#conteneur3
-{
-
+.inner-footer{/*contenu du footer*/
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
     display: flex;
-    flex-direction: column;
-    width: 13em;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
 
 }
-.testeux
-{
+.footer-items{/*boites du footer*/
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
+h1{
+    padding: 10px 0;
+    font-size: 25px;
     color: white;
-    font-family: gill sans;
+    text-transform: uppercase;
+}
+h2{
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.border{/*petite barre sous les titres*/
+    height: 2px;
+    width: 40px;
+    background: white;
+}
+ul{/*liste*/
+    list-style: none;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+ul a{/*nom des pages*/
     text-decoration: none;
-    font-weight: normal;
-    font-size: 0.8em;
-
-}
-.Mentions
-{
+    outline: none;
     color: white;
-    font-family: gill sans;
-    text-decoration: underline;
-    font-weight: normal;
-    font-size: 0.6em;
-    color: blue;
-
+    transition: 0.3s;
 }
-.Mentions:hover
-{
-
-    color: navy;
-}
-.testeux:hover
-{
-
+ul a:hover{/*hover des pages*/
     color: black;
-
-
 }
-.testeux:active
-{
-
-
-    color: rgb(80,80,80);
-
+ul li{
+    margin: 10px 0;
+    height: 25px;
 }
-.menuenbas
-{
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: normal;
+li i{
+    margin-right: 20px;
 }
-.ensemble
-{
-
-    display: flex;
-    justify-content: space-between;
-
+.footer-logo{
+    margin-top: 50px;
 }
-.mail
-{
 
+.footer-bottom{/*petite barre sous le footer*/
+    padding:10px;
+    background: cornflowerblue;
     color: white;
-    font-family: gill sans;
-    text-decoration: underline;
-    font-weight: normal;
-    color: blue;
+    font-size: 12px;
 }
-.mail:hover
-{
-
-    color: navy;
-
+.footer-bottom a{/*CGU*/
+    color: white;
+    text-decoration: none;
 }
-.barrefooter
-{
+.footer-bottom a:hover{/*Hover des CGU*/
+    color: black;
+}
 
-    height: 0em;
+@media screen and (max-width: 1085px){/*Mise en place du responsive*/
+    .footer-items{
+        width: 50%;
+    }
+}
 
-
+@media screen and (max-width: 600px){
+    .footer-items{
+        width: 100%;
+    }
 }

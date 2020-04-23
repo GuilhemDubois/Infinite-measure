@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="inscriptionstyle.css"/>
 </head>
 <body>
-
+<br><br><br>
 
 <?php include('header.php'); ?>
 
-<br><br><br><br><br><br><br><br><br>
 
 <?php
 if(!empty($_POST)) {
@@ -87,9 +86,9 @@ if(!empty($_POST)) {
 
 
 
+<br /><br /><br /><br /><br /><br />
 
-
-<p id="titreinscription">
+<p class="titreinscription">
 
 
     INSCRIPTION

@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ab21c9-a28b-4cce-ae5c-5b4b4bc6a741" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bdd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VotreProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/VotreProfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cible.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscriptionstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/inscriptionstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/mail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,28 +33,20 @@
       <executable />
     </execution>
   </component>
-<<<<<<< Updated upstream
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
       </list>
     </option>
->>>>>>> Stashed changes
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,13 +54,12 @@
   <component name="ProjectId" id="1aOw57Jf1RgfhYMH0Klt89ay4n4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/untitled" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
@@ -71,25 +74,38 @@
       <updated>1586619762025</updated>
       <workItem from="1586619763449" duration="139000" />
       <workItem from="1586849337111" duration="2063000" />
-<<<<<<< Updated upstream
-      <workItem from="1587033628745" duration="10394000" />
-=======
       <workItem from="1587121934305" duration="63000" />
       <workItem from="1587121999734" duration="4074000" />
->>>>>>> Stashed changes
+      <workItem from="1587060984497" duration="6817000" />
+      <workItem from="1587126172443" duration="2211000" />
+      <workItem from="1587130732395" duration="853000" />
+      <workItem from="1587132300404" duration="2523000" />
+      <workItem from="1587162133256" duration="423000" />
+      <workItem from="1587321893198" duration="2028000" />
+      <workItem from="1587329308018" duration="4327000" />
+      <workItem from="1587344160182" duration="4976000" />
+      <workItem from="1587379835340" duration="276000" />
+      <workItem from="1587477879140" duration="8537000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-<<<<<<< Updated upstream
-    <state x="240" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1587033628740">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587033628740" />
-=======
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1587121996636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -102,6 +118,30 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587121934538" />
->>>>>>> Stashed changes
+    <state x="492" y="39" key="#PHP" timestamp="1587126558461">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="492" y="39" key="#PHP/0.0.1536.864@0.0.1536.864" timestamp="1587126558461" />
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1587136174022">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1587136174022" />
+    <state x="604" y="365" key="NewPhpFileDialog" timestamp="1587495590191">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1587495590191" />
+    <state x="604" y="365" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1587396610505" />
+    <state x="755" y="439" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587133140826" />
+    <state x="240" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1587477889407">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="200" y="252" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1587129890021" />
+    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1587477889406" />
+    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587126181644" />
+    <state x="300" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587379839178" />
+    <state x="619" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1587478063055">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="619" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1587478063055" />
   </component>
 </project>
