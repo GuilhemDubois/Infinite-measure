@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
 <head>
+
     <meta charset="utf-8" />
-    <title>Foire aux questions</title>
+    <title>Eyeco</title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="FAQ.css"/>
-</head>
-
-
-<body>
-    <?php include ('header.php'); ?>
-    <br><br><br><br><br><br>
-    <?php
-    $req = $pdo->prepare('SELECT question,reponse,identifiant,jour FROM faq WHERE reponse IS NOT NULL ');
-    $req->execute();
-    $allQuesEtResp = $req->fetchAll();
+    <link rel="stylesheet" href="normalize.css"/>
 
 
     ?>
@@ -25,19 +15,39 @@
             <?php foreach($allQuesEtResp as $questionEtSaRep):    
             $listQuestions=array(''); ?>
 
-            <?php foreach($questionEtSaRep as $questionPuisSaRep): array_push($listQuestions,$questionPuisSaRep) ;?>
-            <?php endforeach;
-            ?>
 
-            <div class="questionEtReponse">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
 
+</head>
 
-                Question de <?php echo $listQuestions[3],' le ', $listQuestions[4]?><br>
-                <?php echo $listQuestions[1]; ?><br>
-                <?php echo $listQuestions[2]; ?><br><br><br><br>
+<body>
 
+<?php include('Header.php'); ?>
 
+<div class="faq">
+    <div class="f-title">
+        <h2>Bienvenue sur la FAQ</h2>
+    </div>
+</div>
+
+<section>
+    <div class="f-container">
+        <div class="f-accordion">
+            <div class="f-accordion-item" id="question1">
+                <a class="f-accordion-link" href="#question1">
+                    Combien de temps dure un test ?
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                </a>
+                <div class="f-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                    </p>
+
+                </div>
             </div>
+
 
             <?php unset($listQuestions);?>
             <?php endforeach;?>
@@ -57,8 +67,52 @@
             <?php if(!isset($_SESSION['auth'])):  ?>
                 <a class = "askquest" href = "VotreProfil.php" title = "Poser Question">Poser Question</a>
             <?php endif; ?>
-    </div>
 
+            <div class="f-accordion-item" id="question2">
+                <a class="f-accordion-link" href="#question2">
+                    Comment accéder à mon compte profil ?
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                </a>
+                <div class="f-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                    </p>
+
+                </div>
+            </div> <div class="f-accordion-item" id="question3">
+                <a class="f-accordion-link" href="#question3">
+                    Est-il possible de changer de langue ?
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                </a>
+                <div class="f-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                    </p>
+
+                </div>
+            </div>
+            <div class="f-accordion-item" id="question4">
+                <a class="f-accordion-link" href="#question4">
+                    Où trouver les résultats de mes tests ?
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-minus"></i>
+                </a>
+                <div class="f-answer">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<?php include('Footer.php'); ?>
 
 
 
@@ -81,3 +135,7 @@
 
 </body>
 </html>
+
+<script src="app.js" charset="utf-8"></script>
+</body>
+
