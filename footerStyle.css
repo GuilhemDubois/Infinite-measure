@@ -1,78 +1,94 @@
+*{/*all*/
+    margin:0;padding: 0;
 
-footer
-{
-    background-color: #839BB9;
-    display :flex;
-    position: fixed;
-    justify-content: space-around;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 10px;
+}
+footer{
+    width: 100%;
+    background: cornflowerblue;
+    display: block;
+}
+.inner-footer{/*contenu du footer*/
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+.footer-items{/*boites du footer*/
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+}
+h1{
+    padding: 10px 0;
+    font-size: 25px;
     color: white;
-    font-family: Verdana;
+    text-transform: uppercase;
 }
-
-footer p, footer ul
-{
-    font-size :0,7em;
+h2{
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
-
-footer h2
-{
-    font-size:1.1em;
+.border{/*petite barre sous les titres*/
+    height: 2px;
+    width: 40px;
+    background: white;
 }
-
-#contact
-{
-
-
-    flex-direction: column;
-
+ul{/*liste*/
+    list-style: none;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 }
-
-#menuenbas
-{
-
-    flex-direction: column;
-    text-align: center;
-}
-
-#menuenbas a
-{
+ul a{/*nom des pages*/
     text-decoration: none;
+    outline: none;
     color: white;
+    transition: 0.3s;
+}
+ul a:hover{/*hover des pages*/
+    color: black;
+}
+ul li{
+    margin: 10px 0;
+    height: 25px;
+}
+li i{
+    margin-right: 20px;
+}
+.footer-logo{
+    margin-top: 50px;
+}
 
+.footer-bottom{/*petite barre sous le footer*/
+    padding:10px;
+    background: cornflowerblue;
+    color: white;
+    font-size: 12px;
 }
-#menuenbas ul
-{
-    list-style-type: none;
+.footer-bottom a{/*CGU*/
+    color: white;
+    text-decoration: none;
 }
-#menuenbas :hover
-{
+.footer-bottom a:hover{/*Hover des CGU*/
     color: black;
 }
 
-#logofooter img
-{
-    text-align: center;
-    margin-top: 40px;
-
-
-}
-.mail
-{
-    color: white;
-    text-decoration: underline;
-}
-.mail:hover
-{
-    color: black;
+@media screen and (max-width: 1085px){/*Mise en place du responsive*/
+    .footer-items{
+        width: 50%;
+    }
 }
 
-.Mentions
-{
-    font-size: 0.6em;
+@media screen and (max-width: 600px){
+    .footer-items{
+        width: 100%;
+    }
 }
-
-
