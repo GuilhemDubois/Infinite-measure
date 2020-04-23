@@ -30,9 +30,9 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
             <div class="m-right">
                 <a href="eyeco.php" class="m-link"><i class="fas fa-home"></i> Accueil</a>
                 <a href="LesTests.php" class="m-link"><i class="fas fa-chart-line"></i> Les tests</a>
-                <a href="#" class="m-link"><i class="fas fa-tachometer-alt"></i> Vos résultat</a>
+                <a href="Resultats.php" class="m-link"><i class="fas fa-tachometer-alt"></i> Vos résultat</a>
                 <a href="NousConnaitre.php" class="m-link"><i class="far fa-question-circle"></i> A propos</a>
-                <a href="#" class="m-link"><i class="fas fa-user"></i> Mon profil</a>
+                <a href="VotreProfil.php" class="m-link"><i class="fas fa-user"></i> Mon profil</a>
                 <button class="button-language">Langues</button>
             </div>
 
