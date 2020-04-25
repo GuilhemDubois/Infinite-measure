@@ -17,10 +17,12 @@ body{
     color: white;
     border-bottom: 2px solid white;
     text-align: center;
-    font-weight: 700;
     position:absolute;
     left:50%;
     transform: translate(-50%);
+}
+#c-title h2{/*Ajuster la taille du titre*/
+    font-weight: 700;
 }
 
 .c-text {/*texte de présentation*/

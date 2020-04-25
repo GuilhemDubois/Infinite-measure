@@ -20,10 +20,12 @@ body{
     color: white;
     border-bottom: 2px solid white;
     text-align: center;
-    font-weight: 700;
     position:absolute;
     left:50%;
     transform: translate(-50%);
+}
+.t-title h2{/*Ajuster le titre*/
+    font-weight: 700;
 }
 #t-button{/*div du bouton*/
     background-color: #8ECBEA;
