@@ -29,7 +29,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 <?php include('header.php'); ?>
 
 
-<?php include('footer.php'); ?>
+
 
 <div id="apropos">
 
@@ -82,6 +82,6 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 
 </body>
-
+<?php include('footer.php'); ?>
 
 </html>
