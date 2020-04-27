@@ -47,30 +47,6 @@ section{/*Secction utilisée pour centre les élements*/
     display: none;
 }
 .f-answer{
-
-
-.askquest
-{
-
-    font-weight: bold;
-    font-size: 2.5em;
-    position: fixed;
-    right: 41%;
-    bottom: 40%;
-    background-color: #839BB9;
-    border: #839BB9;
-    border-radius: 5em;
-    color: white;
-    text-decoration: none;
-
-}
-.askquest:hover
-{
-
-    background-color: #636A85;
-
-}
-
     position: relative;
     background-color: skyblue;
     border-radius: .4rem;
@@ -95,16 +71,6 @@ section{/*Secction utilisée pour centre les élements*/
     padding: 1rem;
     transition: max-height 650ms;
 }
-/*
-.f-accordion-item:target .f-answer{
-   max-height: 20rem;
-}
-.f-accordion-item:target .f-accordion-link .fa-plus{
-   display: none;
-}
-.f-accordion-item:target .f-accordion-link .fa-minus{
-   display: block;
-}*/
 
 .f-title /*Boite sur premiere slide page de FAQ*/
 {
