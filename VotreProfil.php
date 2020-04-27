@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="footerStyle.css"/>
     <link rel="stylesheet" href="styleAccueil.css"/>
     <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
+
 
 </head>
 
@@ -27,59 +30,34 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
             header('Location: eyeco.php');
             exit();
         }else{
-            echo'Identifiant ou mdp non valide';
+            echo'Identifiant ou Mot de passe incorrect !';
         }
     }elseif(!empty($_POST)){
-    echo'Veuillez remplir les informations';
+    echo'<div class="error"><p>Veuillez remplir les informations correctement !</p></div>';
 }
 
  ?>
-<div>
-<p id="inscriptions">
-    <div id="formulaire">
+
+<div class="connexion">
+    <div class="c-form">
+
+        <h3>Connexion</h3>
+        <form action="#" method="post">
+
+            <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant"><br/>
 
 
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe">
+            <br>
+            <input type="submit" value="Se connecter">
+            <a href="#">Mot de passe oublié ?</a><br><br>
+            <a href="#">S'inscrire</a>
 
-    INSCRIPTIONS | CONNEXION
-
-
-</p>
-</div>
-<form method="POST" action="">
-
-    <p>
-
-        <input type="text" name="identifiant" id="pseudo" placeholder="Identifiant" size="28" maxlength="20" />
-
-        <br />
-
-        <input type="password" name="mdp" id="pass" placeholder="Mot de passe" />
-
-        </br>
-
-
-        <input class="envoyer" type="submit" value="Connexion" />
-
-
-
-    </p>
-</form>
+        </form>
+    </div>
 </div>
 
-
-<div id="sinscrire">
-
-
-
-    <a class = "sinscrire" href = "inscription.php" title = "Accueil">S'inscrire</a>
-
-
-
-</div>
-
-
+<?php include('footer.php'); ?>
+<script src="app.js" charset="utf-8"></script>
 
 </body>
-<footer>
-<?php include('footer.php'); ?>
-</footer>

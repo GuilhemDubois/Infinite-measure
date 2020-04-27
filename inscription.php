@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="inscriptionstyle.css"/>
 </head>
 <body>
-<br><br><br>
 
 <?php include('header.php'); ?>
 
@@ -31,7 +30,7 @@ if(!empty($_POST)) {
         $req->execute([$_POST['identifiant']]);
         $testexist = $req->fetch();
         if ($testexist) {
-            $errors['identifiant'] = 'Cette identifiant est déja pris';
+            $errors['identifiant'] = 'Cet identifiant est déja pris';
         }
     }
 
