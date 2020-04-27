@@ -36,6 +36,8 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
  ?>
 <div>
 <p id="inscriptions">
+    <div id="formulaire">
+
 
 
     INSCRIPTIONS | CONNEXION
@@ -43,8 +45,6 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
 
 </p>
 </div>
-<div id="formulaire">
-
 <form method="POST" action="">
 
     <p>

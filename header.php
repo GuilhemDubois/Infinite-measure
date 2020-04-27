@@ -35,7 +35,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                 <a href="VotreProfil.php" class="m-link"><i class="fas fa-user"></i> Mon profil</a>
                 <a href="changelangue.php" class="m-link"><i class="fas fa-user"></i> Langues</a>
             </div>
-            <?php echo $_SESSION['langue']; ?>
+
 
         </div>
 
