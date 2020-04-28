@@ -27,9 +27,22 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 <body>
 <?php include('header.php'); ?>
+
+<div class="faq">
+    <div class="f-title">
+        <h2>Votre historique</h2>
+    </div>
+</div>
+
 <?php require_once 'bdd.php';
+if(!isset($_SESSION['auth'])){  echo '<body onLoad="alert(\'Connectez vous...\')">';
+    echo '<meta http-equiv="refresh" content="0;URL=VotreProfil.php">';
+}else{
+
+
+
+
 $re=$_SESSION['auth']->identifiant; /*re variable de l'user rechercher*/
-echo $re;
 $req = $pdo->prepare("SELECT MAX(id_Test) FROM `test` WHERE identifiant='$re'");
  $req->execute();
 $nbtests = $req->fetch();
@@ -37,13 +50,27 @@ $nbtests = $req->fetch();
 foreach ($nbtests as $name => $value) {
     $nbtest = $value;
 }  /* selectionne le nombre de test effectuer*/
-
+    if ($nbtest==''){ echo "<section><div class='f-container'><div class='f-accordion'><div class=\"f-accordion-item\" id=\"question1\">
+            <a class=\"f-accordion-link\" href=\"#question1\"> Vous n'avez pas de test effectué !</a></div></div></div></section>"; }
+    ?>
+<section>
+<div class="f-container">
+<div class="f-accordion">
+<?php
 for ($i = 1; $i <= $nbtest; $i++) {
-    $req = $pdo->prepare("SELECT MAX(id_Test_composant) FROM `test` WHERE identifiant='$re'");
+    $req = $pdo->prepare("SELECT MAX(id_Test_composant) FROM `test` WHERE id_Test='$i' AND identifiant='$re' ");
     $req->execute();
     $nbtestcomposants=$req->fetch(); ?>
-    <div><?php echo 'Test n° ',$i ?> </div>
-    <div>
+
+        <div class="f-accordion-item" id="question1">
+            <a class="f-accordion-link" href="#question1">
+                <?php echo 'Test n° ',$i ?>
+
+
+
+
+
+
     <table width="630" align="left" bgcolor="#CCCCCC">
 
     <tr>
@@ -59,11 +86,12 @@ for ($i = 1; $i <= $nbtest; $i++) {
     }  /* selectionne le nombre de composant de test effectuer*/
 
         for ($y = 1; $y <= $nbtestcomposant; $y++) {
-            $req = $pdo->prepare("SELECT type, score  FROM `test` WHERE id_Test_composant='$y' AND identifiant='$re' ");
+            $req = $pdo->prepare("SELECT type,score,date  FROM `test` WHERE id_Test_composant='$y' AND identifiant='$re' AND id_Test='$i' ");
             $req->execute();
             $composant=$req->fetch();
             $type=$composant->type;
             $score=$composant->score;
+            $date=$composant->date;
             ?>
             <tr>
 
@@ -77,13 +105,14 @@ for ($i = 1; $i <= $nbtest; $i++) {
       <?php  }  ?>
 
 
-    </table></div>
+    </table> <div><?php echo $date; ?> </div> </a></div>
+
 
         <?php } ?>
+</div>
+</section>
 
-
-
-
+<?php } ?>
 </body>
 <?php include('footer.php'); ?>
 
