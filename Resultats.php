@@ -1,8 +1,8 @@
-<!DOCTYPE html>
 <?php include('testlangue.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>  <?php if ($_SESSION['langue'] == 'francais')
@@ -24,9 +24,9 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
 
 </head>
+<?php include ('header.php'); ?>
 
 <body>
-<?php include('header.php'); ?>
 
 <div class="faq">
     <div class="f-title">

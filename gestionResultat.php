@@ -24,6 +24,9 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 
 
+</head>
+
+
 
 
 <?php include('header.php'); $admin=$_SESSION['auth']->admin;
@@ -170,6 +173,6 @@ for ($i = 1; $i <= $nbtest; $i++) {
 
 
 
-
+<?php include ('footer.php');?>
 
 
