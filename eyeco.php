@@ -17,8 +17,24 @@
 <?php include('header.php'); ?>
 <div class="accueil">
     <div class="a-title">
-        <h2>Tests psychotechniques pour pilotes de ligne</h2>
-        <p> Nous évaluons vos compétences grâce à une batterie de test adapté à vos besoins </p>
+        <h2><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Tests psychotechniques pour pilotes de ligne";
+            }
+            else
+            {
+                echo "Psychotechnical tests for airline pilots";
+            }
+            ?></h2>
+        <p><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Nous évaluons vos compétences grâce à une batterie de test adapté à vos besoins";
+            }
+            else
+            {
+                echo "We assess your skills using a test battery adapted to your needs";
+            }
+            ?>  </p>
     </div>
 </div>
 

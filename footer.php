@@ -15,21 +15,61 @@
         </div>
 
         <div class="footer-items">
-            <h1>AUTRES PAGES</h1>
+            <h1><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "AUTRES PAGES";
+                }
+                else
+                {
+                    echo "OTHER PAGES";
+                }
+                ?></h1>
             <div class="border"></div>
             <ul>
-                <a href="eyeco.php"><li>Accueil</li></a>
-                <a href="LesTests.php"><li>Les tests</li></a>
-                <a href="#"><li>Vos résulats</li></a>
-                <a href="NousConnaitre.php"><li>A propos</li></a>
+                <a href="eyeco.php"><li><?php if ($_SESSION['langue'] == 'francais')
+                        {
+                            echo "Accueil";
+                        }
+                        else
+                        {
+                            echo "HOME";
+                        }
+                        ?></li></a>
+                <a href="LesTests.php"><li>TEST</li></a>
+
+                <a href="NousConnaitre.php"><li><?php if ($_SESSION['langue'] == 'francais')
+                        {
+                            echo "A propos";
+                        }
+                        else
+                        {
+                            echo "ABOUT US";
+                        }
+                        ?></li></a>
             </ul>
         </div>
 
         <div class="footer-items">
-            <h1>Des questions ?</h1>
+            <h1><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Des questions ?";
+                }
+                else
+                {
+                    echo "Question ?";
+                }
+                ?></h1>
             <div class="border"></div>
             <ul>
-                <a href="FAQ.php"><li>Consulter notre FAQ</li></a>
+                <a href="FAQ.php"><li><?php if ($_SESSION['langue'] == 'francais')
+                        {
+                            echo "Consulter notre FAQ";
+                        }
+                        else
+                        {
+                            echo "Consult our FAQ";
+                        }
+                        ?></li></a>
 
             </ul>
         </div>
