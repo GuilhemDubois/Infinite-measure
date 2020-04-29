@@ -92,7 +92,15 @@ if(!empty($_POST)) {
 <div class="inscription">
     <div class="i-form">
 
-        <h3>Inscription</h3>
+        <h3><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Inscription";
+            }
+            else
+            {
+                echo "Log in";
+            }
+            ?></h3>
         <form action="#" method="post">
 
             <input type="text" name="prenom" id="prenom" placeholder="Prénom" size="28" maxlength="20"><br/>

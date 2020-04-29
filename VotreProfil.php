@@ -47,7 +47,15 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
 <div class="connexion">
     <div class="c-form">
 
-        <h3>Connexion</h3>
+        <h3><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Connexion";
+            }
+            else
+            {
+                echo "Log in";
+            }
+            ?></h3>
         <form action="#" method="post">
 
             <input type="text" name="identifiant" id="identifiant" placeholder="<?php if ($_SESSION['langue'] == 'francais')
@@ -80,7 +88,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
                 echo "Connexion";
             }
             ?>">
-            <a href="#"><?php if ($_SESSION['langue'] == 'francais')
+            <a href="motdepasse.php"><?php if ($_SESSION['langue'] == 'francais')
                 {
                     echo "Mot de passe oublié ?";
                 }
