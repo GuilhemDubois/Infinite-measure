@@ -1,7 +1,5 @@
-body{
-    background-color:#8ECBEA;
-}
-.inscription{/*page de connexion en générale*/
+
+.motdepasse{/*page de connexion en générale*/
     width: 100%;
     height: 90%;
     background-color:#8ECBEA ;
@@ -14,8 +12,7 @@ h3{/*titre connexion*/
     font-weight: 700;
     color: white;
 }
-.i-form{/*div contenant les cases à remplir + se connecter*/
-    margin-top: 3%;
+.m-form{/*div contenant les cases à remplir + se connecter*/
     position:absolute;
     top:50%;
     left:50%;
@@ -27,7 +24,7 @@ h3{/*titre connexion*/
     box-shadow: .3rem 2px .3rem rgba(0,0,0,.1);
 }
 
-.i-form input[type=text], .i-form input[type=password], .i-form input[type=email], .i-form input[type=number]{/*case id et mdp*/
+.m-form input[type=password]{/*case id et mdp*/
     margin-bottom: 20px;
     width: 100%;
     border: none;
@@ -37,7 +34,7 @@ h3{/*titre connexion*/
     height: 30px;
     color:white;
 }
-.i-form input[type=submit]{/*case se connecter*/
+.m-form input[type=submit]{/*case se connecter*/
     margin-bottom: 20px;
     width: 100%;
     border: 1px solid black;
@@ -46,16 +43,16 @@ h3{/*titre connexion*/
     background-color: lightgrey;
     border-radius: 4px;
 }
-.i-form input[type=submit]:hover{
+.m-form input[type=submit]:hover{
     cursor: pointer;
     background-color: grey;
     color: white;
 }
-.i-form a{/*pour les liens de redirection*/
+.m-form a{/*pour les liens de redirection*/
     text-decoration: none;
     color: black;
 }
-.i-form a:hover{
+.m-form a:hover{
 
     color:white;
 }

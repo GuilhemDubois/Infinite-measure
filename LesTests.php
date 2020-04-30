@@ -19,12 +19,28 @@
 
     <div class="test">
         <div class="t-title">
-            <h2>Déroulement des tests psychotechniques</h2>
+            <h2><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Déroulement des tests psychotechniques";
+                }
+                else
+                {
+                    echo "Conduct of psychotechnical tests";
+                }
+                ?></h2>
         </div>
 
     </div>
     <div id="t-button">
-        <button class="button-commencer">COMMENCER</button>
+        <button class="button-commencer"><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "COMMENCER";
+            }
+            else
+            {
+                echo "START";
+            }
+            ?></button>
 
     </div>
     <?php include('Footer.php'); ?>

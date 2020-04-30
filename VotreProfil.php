@@ -30,10 +30,16 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
             header('Location: eyeco.php');
             exit();
         }else{
-            echo'Identifiant ou Mot de passe incorrect !';
+            if ($_SESSION['langue'] == 'francais') {
+                echo "Identifiant ou Mot de passe incorrect !";
+            } else {
+                echo "User or password incorrect !";
+            }
+
+
         }
     }elseif(!empty($_POST)){
-    echo'<div class="error"><p>Veuillez remplir les informations correctement !</p></div>';
+    echo'<div class="error"><p> Veuillez remplir les informations correctement !</p></div>';
 }
 
  ?>
@@ -41,17 +47,65 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
 <div class="connexion">
     <div class="c-form">
 
-        <h3>Connexion</h3>
+        <h3><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Connexion";
+            }
+            else
+            {
+                echo "Log in";
+            }
+            ?></h3>
         <form action="#" method="post">
 
-            <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant"><br/>
+            <input type="text" name="identifiant" id="identifiant" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Identifiant";
+            }
+            else
+            {
+                echo "Username";
+            }
+            ?>"><br/>
 
 
-            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe">
+            <input type="password" name="mdp" id="mdp" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Mot de passe";
+            }
+            else
+            {
+                echo "Password";
+            }
+            ?>">
             <br>
-            <input type="submit" value="Se connecter">
-            <a href="#">Mot de passe oublié ?</a><br><br>
-            <a href="#">S'inscrire</a>
+            <input type="submit" value="<?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Se connecter";
+            }
+            else
+            {
+                echo "Connexion";
+            }
+            ?>">
+            <a href="motdepasse.php"><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Mot de passe oublié ?";
+                }
+                else
+                {
+                    echo "Password forget ?";
+                }
+                ?></a><br><br>
+            <a href="inscription.php"><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "S'inscrire";
+                }
+                else
+                {
+                    echo "Inscription";
+                }
+                ?></a>
 
         </form>
     </div>

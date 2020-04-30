@@ -41,20 +41,7 @@
 .m-link i{/*Icone*/
     margin-right: 5px;
 }
-.button-language{
-    background: cornflowerblue;
-    color:white;
-    text-transform: uppercase;
-    font-weight: 700;
-    border:solid white 2px;
-    padding: 10px;margin: 0 15px;
-    transition: all 0.3s ease-in-out;
 
-}
-.button-language:hover{
-    background-color: darkgrey;
-
-}
 .m-nav-toggle{/*Hamburger responsive*/
     width:40px;
     height:66px;
