@@ -32,10 +32,19 @@
                         }
                         else
                         {
-                            echo "HOME";
+                            echo "Home";
                         }
                         ?></li></a>
-                <a href="LesTests.php"><li>TEST</li></a>
+                <a href="LesTests.php"><li>Test</li></a>
+                <a href="LesTests.php"><li><?php if ($_SESSION['langue'] == 'francais')
+                        {
+                            echo "Vos résultats";
+                        }
+                        else
+                        {
+                            echo "Your results";
+                        }
+                        ?></li></a>
 
                 <a href="NousConnaitre.php"><li><?php if ($_SESSION['langue'] == 'francais')
                         {
@@ -43,7 +52,7 @@
                         }
                         else
                         {
-                            echo "ABOUT US";
+                            echo "About us";
                         }
                         ?></li></a>
             </ul>
@@ -56,7 +65,7 @@
                 }
                 else
                 {
-                    echo "Question ?";
+                    echo "Any questions ?";
                 }
                 ?></h1>
             <div class="border"></div>
@@ -67,7 +76,7 @@
                         }
                         else
                         {
-                            echo "Consult our FAQ";
+                            echo "FAQ";
                         }
                         ?></li></a>
 
@@ -81,7 +90,15 @@
 
     <div class="footer-bottom">
         Copyright 2020 | All rights reserved |
-        <a href="mentionlegales.php">CGU</a>
+        <a href="mentionlegales.php"><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "CGU";
+            }
+            else
+            {
+                echo "Terms of Use";
+            }
+            ?></a>
     </div>
 
 

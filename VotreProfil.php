@@ -85,7 +85,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
             }
             else
             {
-                echo "Connexion";
+                echo "Log in";
             }
             ?>">
             <a href="motdepasse.php"><?php if ($_SESSION['langue'] == 'francais')
@@ -94,7 +94,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
                 }
                 else
                 {
-                    echo "Password forget ?";
+                    echo "Forgot password ?";
                 }
                 ?></a><br><br>
             <a href="inscription.php"><?php if ($_SESSION['langue'] == 'francais')
@@ -103,7 +103,7 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
                 }
                 else
                 {
-                    echo "Inscription";
+                    echo "Sign up";
                 }
                 ?></a>
 

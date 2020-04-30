@@ -19,7 +19,15 @@
 
     <div class="CGU">
         <div id="c-title">
-            <h2>Conditions générales d'utilisation</h2>
+            <h2><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Conditions générales d'utilisation";
+                }
+                else
+                {
+                    echo "Terms of Use";
+                }
+                ?></h2>
         </div>
     </div>
 

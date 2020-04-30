@@ -107,11 +107,11 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                         </style>
                         <?php if ($_SESSION['langue'] == 'francais')
                     {
-                        echo "Deconnexion";
+                        echo "Déconnexion";
                     }
                     else
                     {
-                        echo "Deconect";
+                        echo "Sign out";
                     }
                     ?></a>
          <?php      }
@@ -123,7 +123,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                     }
                     else
                     {
-                        echo "Connect";
+                        echo "Sign in";
                     }
                     ?></a>
                 <?php } ?>
