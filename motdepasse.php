@@ -18,7 +18,52 @@
 <body>
 
 
-<?php include('header.php');?>
+<?php include('header.php');
+
+if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !empty($_POST['oldmdp']) ) {
+    $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ? ');
+    $req->execute([$_POST['identifiant']]);
+    $user = $req->fetch();
+    if($user==''){
+        if ($_SESSION['langue'] == 'francais') {
+        echo "Identifiant ou Mot de passe incorrect !";
+    } else {
+        echo "User or password incorrect !";
+    }}
+    elseif (password_verify($_POST['oldmdp'],$user->mdp)) {
+        $req = $pdo->prepare('UPDATE user set mdp=? WHERE identifiant= ? ');
+        $req->execute([$_POST['newmdp'],$_POST['identifiant']]);
+        echo '<body onLoad="alert(\'Connectez vous, votre mdp a été modifié...\')">';
+        echo '<meta http-equiv="refresh" content="0;URL=VotreProfil.php">';
+        exit();
+
+    }else{
+        if ($_SESSION['langue'] == 'francais') {
+            echo "Identifiant ou Mot de passe incorrect !";
+        } else {
+            echo "User or password incorrect !";
+        }
+
+
+    }
+}elseif(!empty($_POST)){
+    echo'<div class="error"><p> Veuillez remplir les informations correctement !</p></div>';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
 
 <div class="motdepasse">
     <div class="m-form">
@@ -32,9 +77,20 @@
                 echo "Change your password";
             }
             ?></h3>
-        <form action="#" method="post">
 
-            <input type="password" name="mot de passe1" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+        <form method="post">
+
+            <input type="text" name="identifiant" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Identifiant";
+            }
+            else
+            {
+                echo "Username";
+            }
+            ?>">
+
+            <input type="password" name="oldmdp" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
             {
                 echo "Ancien mot de passe";
             }
@@ -42,8 +98,11 @@
             {
                 echo "Previous password";
             }
-            ?>"><br/>
-            <input type="password" name="mot de passe2" id="motdepasse2" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+            ?>">
+
+            <br/>
+
+            <input type="password" name="newmdp" id="motdepasse2" placeholder="<?php if ($_SESSION['langue'] == 'francais')
             {
                 echo "Nouveau mot de passe";
             }
@@ -51,7 +110,10 @@
             {
                 echo "New password";
             }
-            ?>"><br>
+            ?>">
+
+            <br>
+
             <input type="submit" value="<?php if ($_SESSION['langue'] == 'francais')
             {
                 echo "Modifier";
@@ -60,7 +122,11 @@
             {
                 echo "Modify";
             }
-            ?>"><br><br>
+            ?>">
+
+            <br>
+            <br>
+
             <a href="Inscription.php"><?php if ($_SESSION['langue'] == 'francais')
                 {
                     echo "S'inscrire";
