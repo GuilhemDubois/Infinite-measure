@@ -168,7 +168,7 @@ if(!empty($_POST)) {
             }
             ?>">
 
-            <a href="VotreProfil.php"><?php if ($_SESSION['langue'] == 'francais')
+            <a href="Connexion.php"><?php if ($_SESSION['langue'] == 'francais')
                 {
                     echo "Se connecter";
                 }

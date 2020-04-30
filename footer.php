@@ -26,7 +26,7 @@
                 ?></h1>
             <div class="border"></div>
             <ul>
-                <a href="eyeco.php"><li><?php if ($_SESSION['langue'] == 'francais')
+                <a href="Accueil.php"><li><?php if ($_SESSION['langue'] == 'francais')
                         {
                             echo "Accueil";
                         }

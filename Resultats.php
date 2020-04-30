@@ -36,7 +36,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 <?php require_once 'bdd.php';
 if(!isset($_SESSION['auth'])){  echo '<body onLoad="alert(\'Connectez vous...\')">';
-    echo '<meta http-equiv="refresh" content="0;URL=VotreProfil.php">';
+    echo '<meta http-equiv="refresh" content="0;URL=Connexion.php">';
 }else{
 
 

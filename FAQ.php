@@ -41,7 +41,7 @@
     <?php endif; ?>
 
     <?php if(!isset($_SESSION['auth'])):  ?>
-        <a class = "askquest" href = "VotreProfil.php" title = "Poser Question">Poser Question</a>
+        <a class = "askquest" href = "Connexion.php" title = "Poser Question">Poser Question</a>
     <?php endif; ?>
 
 

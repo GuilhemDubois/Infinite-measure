@@ -1,0 +1,121 @@
+.body{
+    background-color:#8ECBEA ;
+}
+.profil{/*div qui fait toute la page*/
+
+    width: 100%;
+    height: 100%;
+    background-color: #8ECBEA;
+
+}
+.p-box{/*div qui contient la boite aves les formulaires*/
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-100%);
+    box-sizing: border-box;
+    background-color: lightblue;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: .3rem 2px .3rem rgba(0,0,0,.1);
+
+}
+.p-photo{/*photo de profil*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left: calc(50% - 50px);
+}
+h3{/*titre connexion*/
+    margin-top: 8%;
+
+    padding: 0 0 20px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+
+.p-box p{
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color:grey;
+}
+.p-modifier input[type=submit]{/*case se connecter*/
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+    height: 40px;
+    outline: none;
+    background-color: lightgrey;
+    border-radius: 4px;
+}
+.p-box input[type=submit]:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+.p-box a{/*pour les liens de redirection*/
+    text-decoration: none;
+    color: black;
+}
+.p-box a:hover{
+
+    color:white;
+}
+@media only screen and (max-width: 1130px){
+    .m-right{/*Supprimer le nom des pages sous 1130px*/
+        position: absolute;
+        top:66px;right: 0;
+        width:200px;
+        height:100%;
+        background: cornflowerblue;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+    .m-right button{/*Ajuster le bouton langues dans le menu deroulant*/
+        margin-top: 10px;
+        margin-left: 55px;
+    }
+    .m-link{/*Affichage des liens sur la droite*/
+        display: block;
+        text-align: center;
+        padding: 0px;margin: 0 20px;
+        height: 55px;
+    }
+    .m-nav-toggle{/*Hamburger*/
+        display: flex;
+    }
+}
+@media only screen and (max-width: 930px){/*Responsive*/
+    .m-right{/*Supprimer le nom des pages sous 930px*/
+        position: absolute;
+        top:66px;right: 0;
+        width:200px;
+        height:100%;
+        background: cornflowerblue;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+    .m-right button{/*Ajuster le bouton langues dans le menu deroulant*/
+        margin-top: 10px;
+        margin-left: 55px;
+    }
+    .m-link{/*Affichage des liens sur la droite*/
+        display: block;
+        text-align: center;
+        padding: 0px;margin: 0 20px;
+        height: 55px;
+    }
+    .m-nav-toggle{/*Hamburger*/
+        display: flex;
+    }
+}

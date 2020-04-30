@@ -21,7 +21,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
             </div>
 
             <div class="m-left-logo">
-                <a href="eyeco.php"><img src="images/logopetitpetit.png"/></a>
+                <a href="Accueil.php"><img src="images/logopetitpetit.png"/></a>
             </div>
 
             <div class="m-left">
@@ -29,7 +29,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
             </div>
 
             <div class="m-right">
-                <a href="eyeco.php" class="m-link"><i class="fas fa-home"></i> <?php if ($_SESSION['langue'] == 'francais')
+                <a href="Accueil.php" class="m-link"><i class="fas fa-home"></i> <?php if ($_SESSION['langue'] == 'francais')
                     {
                         echo "Accueil ";
                     }
@@ -118,7 +118,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
          <?php      }
                 else
                 { ?>
-                    <a href="VotreProfil.php" class="m-link"><i class="fas fa-user-slash"></i> <?php if ($_SESSION['langue'] == 'francais')
+                    <a href="Connexion.php" class="m-link"><i class="fas fa-user-slash"></i> <?php if ($_SESSION['langue'] == 'francais')
                     {
                         echo "Connexion";
                     }

@@ -1,123 +1,46 @@
-
-
-
 <head>
 
     <meta charset="utf-8" />
-    <title>Page d'accueil</title>
+    <title>Eyeco</title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
-    <link rel="stylesheet" href="styleAccueil.css"/>
+    <link rel="stylesheet" href="VotreprofilStyle.css"/>
     <link rel="stylesheet" href="normalize.css"/>
+
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
 
-
 </head>
+
+
 
 <body>
 
+<?php include('Header.php'); ?>
+<div class="profil">
+    <div class="p-box">
+        <img src="images/votreprofil.png" class="p-photo">
+        <h3>Votre profil</h3>
 
-<?php include('header.php');?>
+        <p>Prénom</p>
+        <p>Nom</p>
+        <p>Identifiant</p>
+        <p>Code pilote</p>
+        <p>Email</p>
+        <p>Mot de passe</p>
 
-<?php
-if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
-        $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ? ');
-        $req->execute([$_POST['identifiant']]);
-        $user = $req->fetch();
-        if($user==''){
-        if ($_SESSION['langue'] == 'francais') {
-            echo "Identifiant ou Mot de passe incorrect !";
-        } else {
-            echo "User or password incorrect !";
-        }}
-        if (password_verify($_POST['mdp'],$user->mdp)) {
-            $_SESSION['auth'] = $user;
-            header('Location: eyeco.php');
-            exit();
-        }else{
-            if ($_SESSION['langue'] == 'francais') {
-                echo "Identifiant ou Mot de passe incorrect !";
-            } else {
-                echo "User or password incorrect !";
-            }
-
-
-        }
-    }elseif(!empty($_POST)){
-    echo'<div class="error"><p> Veuillez remplir les informations correctement !</p></div>';
-}
-
- ?>
-
-<div class="connexion">
-    <div class="c-form">
-
-        <h3><?php if ($_SESSION['langue'] == 'francais')
-            {
-                echo "Connexion";
-            }
-            else
-            {
-                echo "Log in";
-            }
-            ?></h3>
-        <form action="#" method="post">
-
-            <input type="text" name="identifiant" id="identifiant" placeholder="<?php if ($_SESSION['langue'] == 'francais')
-            {
-                echo "Identifiant";
-            }
-            else
-            {
-                echo "Username";
-            }
-            ?>"><br/>
-
-
-            <input type="password" name="mdp" id="mdp" placeholder="<?php if ($_SESSION['langue'] == 'francais')
-            {
-                echo "Mot de passe";
-            }
-            else
-            {
-                echo "Password";
-            }
-            ?>">
-            <br>
-            <input type="submit" value="<?php if ($_SESSION['langue'] == 'francais')
-            {
-                echo "Se connecter";
-            }
-            else
-            {
-                echo "Log in";
-            }
-            ?>">
-            <a href="motdepasse.php"><?php if ($_SESSION['langue'] == 'francais')
-                {
-                    echo "Mot de passe oublié ?";
-                }
-                else
-                {
-                    echo "Forgot password ?";
-                }
-                ?></a><br><br>
-            <a href="inscription.php"><?php if ($_SESSION['langue'] == 'francais')
-                {
-                    echo "S'inscrire";
-                }
-                else
-                {
-                    echo "Sign up";
-                }
-                ?></a>
-
+        <form action="Votreprofil1.php" class="p-modifier">
+            <input type="submit" value="Modifier les informations">
         </form>
+
+        <a href="#">Déconnexion</a>
+
     </div>
 </div>
 
-<?php include('footer.php'); ?>
-<script src="app.js" charset="utf-8"></script>
 
+<?php include('Footer.php'); ?>
+
+<script src="app.js" charset="utf-8"></script>
 </body>
