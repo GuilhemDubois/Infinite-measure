@@ -7,7 +7,7 @@
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="headerStyle.css"/>
     <link rel="stylesheet" href="footerStyle.css"/>
-    <link rel="stylesheet" href="motdepasseStyle.css"/>
+    <link rel="stylesheet" href="ConnexionStyle.css"/>
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
@@ -18,25 +18,23 @@
 <body>
 
 
-<?php include('header.php');
+<?php include('header.php');?>
 
-if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !empty($_POST['oldmdp']) ) {
+<?php
+if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
     $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ? ');
     $req->execute([$_POST['identifiant']]);
     $user = $req->fetch();
     if($user==''){
         if ($_SESSION['langue'] == 'francais') {
-        echo "Identifiant ou Mot de passe incorrect !";
-    } else {
-        echo "User or password incorrect !";
-    }}
-    elseif (password_verify($_POST['oldmdp'],$user->mdp)) {
-        $req = $pdo->prepare('UPDATE user set mdp=? WHERE identifiant= ? ');
-        $req->execute([$_POST['newmdp'],$_POST['identifiant']]);
-        echo '<body onLoad="alert(\'Connectez vous, votre mdp a été modifié...\')">';
-        echo '<meta http-equiv="refresh" content="0;URL=Connexion.php">';
+            echo "Identifiant ou Mot de passe incorrect !";
+        } else {
+            echo "User or password incorrect !";
+        }}
+    if (password_verify($_POST['mdp'],$user->mdp)) {
+        $_SESSION['auth'] = $user;
+        header('Location: Accueil.php');
         exit();
-
     }else{
         if ($_SESSION['langue'] == 'francais') {
             echo "Identifiant ou Mot de passe incorrect !";
@@ -50,37 +48,23 @@ if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !em
     echo'<div class="error"><p> Veuillez remplir les informations correctement !</p></div>';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
-<div class="motdepasse">
-    <div class="m-form">
+<div class="connexion">
+    <div class="c-form">
 
         <h3><?php if ($_SESSION['langue'] == 'francais')
             {
-                echo "Modifier le mot de passe";
+                echo "Connexion";
             }
             else
             {
-                echo "Change your password";
+                echo "Log in";
             }
             ?></h3>
+        <form action="#" method="post">
 
-        <form method="post">
-
-            <input type="text" name="identifiant" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+            <input type="text" name="identifiant" id="identifiant" placeholder="<?php if ($_SESSION['langue'] == 'francais')
             {
                 echo "Identifiant";
             }
@@ -88,46 +72,38 @@ if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !em
             {
                 echo "Username";
             }
-            ?>">
+            ?>"><br/>
 
-            <input type="password" name="oldmdp" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+
+            <input type="password" name="mdp" id="mdp" placeholder="<?php if ($_SESSION['langue'] == 'francais')
             {
-                echo "Ancien mot de passe";
+                echo "Mot de passe";
             }
             else
             {
-                echo "Previous password";
+                echo "Password";
             }
             ?>">
-
-            <br/>
-
-            <input type="password" name="newmdp" id="motdepasse2" placeholder="<?php if ($_SESSION['langue'] == 'francais')
-            {
-                echo "Nouveau mot de passe";
-            }
-            else
-            {
-                echo "New password";
-            }
-            ?>">
-
             <br>
-
             <input type="submit" value="<?php if ($_SESSION['langue'] == 'francais')
             {
-                echo "Modifier";
+                echo "Se connecter";
             }
             else
             {
-                echo "Modify";
+                echo "Log in";
             }
             ?>">
-
-            <br>
-            <br>
-
-            <a href="Inscription.php"><?php if ($_SESSION['langue'] == 'francais')
+            <a href="motdepasse.php"><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Mot de passe oublié ?";
+                }
+                else
+                {
+                    echo "Forgot password ?";
+                }
+                ?></a><br><br>
+            <a href="inscription.php"><?php if ($_SESSION['langue'] == 'francais')
                 {
                     echo "S'inscrire";
                 }
@@ -140,7 +116,6 @@ if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !em
         </form>
     </div>
 </div>
-
 
 <?php include('footer.php'); ?>
 <script src="app.js" charset="utf-8"></script>

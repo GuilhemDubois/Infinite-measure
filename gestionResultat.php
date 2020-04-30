@@ -31,7 +31,7 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 <?php include('header.php'); $admin=$_SESSION['auth']->admin;
 if($admin==0){echo '<body onLoad=" alert(\'Vous n avez pas le droit d acceder à cette page...\') "> ';
-    echo '<meta http-equiv="refresh" content="0;URL=eyeco.php">';}
+    echo '<meta http-equiv="refresh" content="0;URL=Accueil.php">';}
 ?>
 
 
