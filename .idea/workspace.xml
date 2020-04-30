@@ -21,13 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4ab21c9-a28b-4cce-ae5c-5b4b4bc6a741" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LesTests.php" beforeDir="false" afterPath="$PROJECT_DIR$/LesTests.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NousConnaitre.php" beforeDir="false" afterPath="$PROJECT_DIR$/NousConnaitre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resultats.php" beforeDir="false" afterPath="$PROJECT_DIR$/Resultats.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VotreProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/VotreProfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eyeco.php" beforeDir="false" afterPath="$PROJECT_DIR$/eyeco.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headerStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/headerStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motdepasse.php" beforeDir="false" afterPath="$PROJECT_DIR$/motdepasse.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,11 +237,11 @@
     </state>
     <state x="-1920" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587731272583" />
     <state x="0" y="162" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1587656991654" />
-    <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588232136053">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="240" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1588232813147">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="200" y="252" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1587129890021" />
-    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1587477889406" />
+    <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1920.0.1920.1080@0.0.1536.864" timestamp="1588232813147" />
     <state x="240" y="302" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587126181644" />
     <state x="-1264" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588232136053" />
     <state x="300" y="364" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588000019475" />
