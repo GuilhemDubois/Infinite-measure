@@ -25,6 +25,12 @@ if(!empty($_POST) && !empty($_POST['identifiant']) && !empty($_POST['mdp'])) {
         $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ? ');
         $req->execute([$_POST['identifiant']]);
         $user = $req->fetch();
+        if($user==''){
+        if ($_SESSION['langue'] == 'francais') {
+            echo "Identifiant ou Mot de passe incorrect !";
+        } else {
+            echo "User or password incorrect !";
+        }}
         if (password_verify($_POST['mdp'],$user->mdp)) {
             $_SESSION['auth'] = $user;
             header('Location: eyeco.php');
