@@ -1,6 +1,7 @@
 
 <?php include('testlangue.php');
 include('bdd.php');
+include('online.php');
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 <meta charset="UTF-8">
 <title>S'inscrire</title>
