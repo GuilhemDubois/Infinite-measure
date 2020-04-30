@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 28 avr. 2020 à 07:29
--- Version du serveur :  5.6.11
+-- Généré le :  jeu. 30 avr. 2020 à 14:27
+-- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `faq` (
   `identifiant` varchar(255) NOT NULL,
   `jour` date NOT NULL,
   `question` text NOT NULL,
-  `reponse` text,
+  `reponse` text DEFAULT NULL,
   PRIMARY KEY (`idQuestion`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
@@ -45,6 +45,27 @@ CREATE TABLE IF NOT EXISTS `faq` (
 INSERT INTO `faq` (`idQuestion`, `identifiant`, `jour`, `question`, `reponse`) VALUES
 (5, 'phiphi', '2020-04-19', 'Combien de temps dure les tests ?\r\n', 'le temps qu\'il faut\r\n'),
 (6, 'phiphi', '2020-04-19', 'Quand sera fini le confinement ?\r\n', 'yaaa');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `online`
+--
+
+DROP TABLE IF EXISTS `online`;
+CREATE TABLE IF NOT EXISTS `online` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `temps` int(11) NOT NULL,
+  `userIP` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `online`
+--
+
+INSERT INTO `online` (`id`, `temps`, `userIP`) VALUES
+(3, 1588256768, '::1');
 
 -- --------------------------------------------------------
 
@@ -88,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `email` varchar(255) NOT NULL,
   `mdp` varchar(255) NOT NULL,
   `codepilote` int(11) NOT NULL,
-  `admin` tinyint(1) DEFAULT '0',
+  `admin` tinyint(1) DEFAULT 0,
   `identifiant` varchar(255) NOT NULL,
   PRIMARY KEY (`id_user`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
