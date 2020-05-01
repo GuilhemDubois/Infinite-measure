@@ -22,7 +22,9 @@
 
 <body>
 
-<?php $req =  $pdo -> prepare('SELECT COUNT(*) as nbInscrit FROM user WHERE admin = 0 ');
+<?php
+        //Nombre d'inscrit sur le site n'étant pas admin//
+$req =  $pdo -> prepare('SELECT COUNT(*) as nbInscrit FROM user WHERE admin = 0 ');
 $req -> execute();
 $valeur = $req -> fetch();
 
@@ -30,7 +32,25 @@ $valeur = $req -> fetch();
 $nbInscrit = $valeur -> nbInscrit;
 echo  'il y a actuelement ' . $nbInscrit[0] . ' inscrit (non administrateur) sur le site' ;
 ?>
+<br><br><br><br><br><br><br>
 
+<?php
+    //moyennes des scores de tous les utilisateurs inscrit ayant passser des tests//
+$req = $pdo -> prepare('SELECT * FROM test');
+$req ->execute();
+$listeScore = $req -> fetchAll();
+$moyenne = 0;
+
+
+foreach ($listeScore as $valMoyenne):
+    $valeurScore = $valMoyenne -> score;
+    $moyenne += $valeurScore;  //somme de tous les scores
+
+    endforeach;
+
+    $moyenne /= count($listeScore); //division de la somme de tous le score par le nombre de test effectué
+    var_dump($moyenne);
+?>
 
 
 
