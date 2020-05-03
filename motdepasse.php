@@ -50,19 +50,6 @@ if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !em
     echo'<div class="error"><p> Veuillez remplir les informations correctement !</p></div>';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
 <div class="motdepasse">
