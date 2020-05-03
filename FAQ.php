@@ -40,14 +40,6 @@
 
     <?php endif; ?>
 
-    <?php if(!isset($_SESSION['auth'])):  ?>
-        <a class = "askquest" href = "Connexion.php" title = "Poser Question">Poser Question</a>
-    <?php endif; ?>
-
-
-
-
-
     <div class="f-container">
         <div class="f-accordion">
 
@@ -81,6 +73,22 @@
 
             <?php endforeach;?>
     </div>
+
+    <?php if(!isset($_SESSION['auth'])):  ?>
+        <div id="faq-button">
+            <a href="Connexion.php" class="button-question"><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Poser une question";
+                }
+                else
+                {
+                    echo "Ask your question";
+                }
+                ?></a>
+
+        </div>
+    <?php endif; ?>
+
 </section>
 
     <?php include ('footer.php'); ?>

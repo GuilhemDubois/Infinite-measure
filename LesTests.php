@@ -25,14 +25,14 @@
                 }
                 else
                 {
-                    echo "Conduct of psychotechnical tests";
+                    echo "Conduct of our psychotechnical tests";
                 }
                 ?></h2>
         </div>
 
     </div>
     <div id="t-button">
-        <button class="button-commencer"><?php if ($_SESSION['langue'] == 'francais')
+        <a href="Connexion.php" class="button-commencer"><?php if ($_SESSION['langue'] == 'francais')
             {
                 echo "COMMENCER";
             }
@@ -40,7 +40,7 @@
             {
                 echo "START";
             }
-            ?></button>
+            ?></a>
 
     </div>
     <?php include('Footer.php'); ?>

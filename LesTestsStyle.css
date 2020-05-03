@@ -10,8 +10,8 @@ body{
 }
 
 
-.t-title /*Boite sur premiere slide page de test*/
-{
+.t-title{ /*Boite sur premiere slide page de test*/
+
 
     width: 60%;
     overflow: auto;
@@ -33,6 +33,7 @@ body{
 
 .button-commencer{/*bouton*/
     background-color: #ff6a19;
+    width: 20%;
     border:none;
     color: white;
     padding: 15px;
