@@ -24,7 +24,7 @@ h3{/*titre connexion*/
     box-shadow: .3rem 2px .3rem rgba(0,0,0,.1);
 }
 
-.m-form input[type=password], .m-form input[type=text], .m-form input[type=int]{/*case id et mdp*/
+.m-form input[type=password], .m-form input[type=text]{/*case id et mdp*/
     margin-bottom: 20px;
     width: 100%;
     border: none;
