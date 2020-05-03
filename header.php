@@ -44,15 +44,15 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
                 <?php if ((isset($_SESSION['auth']) && ($_SESSION['auth']->admin==1)) )
                 { ?>
-                    <a href="gestionResultat.php" class="m-link"><i class="fas fa-edit"></i>
+                    <a href="gestionResultat.php" class="m-link"><i class="fas fa-tachometer-alt"></i>
 
                         <?php if ($_SESSION['langue'] == 'francais')
                         {
-                            echo "Vue Résulats";
+                            echo "Résulats";
                         }
                         else
                         {
-                            echo "Vew Results";
+                            echo "Results";
                         }
                         ?></a>
                 <?php      }
@@ -60,11 +60,11 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
                 { ?>
                 <a href="Resultats.php" class="m-link"><i class="fas fa-tachometer-alt"></i> <?php if ($_SESSION['langue'] == 'francais')
                     {
-                        echo "Vos Résultats";
+                        echo "Résultats";
                     }
                     else
                     {
-                        echo "Your Results";
+                        echo "Results";
                     }
                     ?></a> <?php } ?>
 
@@ -74,11 +74,11 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
                         <?php if ($_SESSION['langue'] == 'francais')
                         {
-                            echo "Gestion Login";
+                            echo "Gestion";
                         }
                         else
                         {
-                            echo "Vew Login";
+                            echo "Manage";
                         }
                         ?></a>
                 <?php      }
