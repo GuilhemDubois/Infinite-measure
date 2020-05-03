@@ -20,17 +20,22 @@
 
 <?php include('header.php');
 
-if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !empty($_POST['oldmdp']) ) {
-    $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ? ');
+if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['identifiant']) && !empty($_POST['piloteCode']) ) {
+    $req = $pdo->prepare('SELECT * FROM user WHERE identifiant= ?');
     $req->execute([$_POST['identifiant']]);
     $user = $req->fetch();
+
+    // verification que l'existe
     if($user==''){
         if ($_SESSION['langue'] == 'francais') {
         echo "Identifiant ou Mot de passe incorrect !";
     } else {
         echo "User or password incorrect !";
     }}
-    elseif (password_verify($_POST['oldmdp'],$user->mdp)) {
+
+
+    //verification du code pilote
+    elseif ($_POST['piloteCode'] == $user->codepilote) {
         $req = $pdo->prepare('UPDATE user set mdp=? WHERE identifiant= ? ');
         $req->execute([$_POST['newmdp'],$_POST['identifiant']]);
         echo '<body onLoad="alert(\'Connectez vous, votre mdp a été modifié...\')">';
@@ -77,9 +82,9 @@ if(!empty($_POST) && !empty($_POST['newmdp']) && !empty($_POST['oldmdp']) && !em
             }
             ?>">
 
-            <input type="password" name="oldmdp" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
+            <input type="int" name="piloteCode" id="motdepasse1" placeholder="<?php if ($_SESSION['langue'] == 'francais')
             {
-                echo "Ancien mot de passe";
+                echo "Code pilote";
             }
             else
             {
