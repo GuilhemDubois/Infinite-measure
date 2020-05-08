@@ -15,7 +15,16 @@
 <body>
 
 <?php include('header.php'); ?>
+
 <div class="accueil">
+
+    <p class="date"><?php
+        $jour = date('d');
+        $mois = date('m');
+        $annee = date('Y');
+        echo $jour . '/' . $mois . '/' . $annee;
+        ?></p>
+
     <div class="a-title">
         <h2><?php if ($_SESSION['langue'] == 'francais')
             {
@@ -34,12 +43,12 @@
             {
                 echo "We assess your skills using a test battery adapted to your needs";
             }
-            ?>  </p>
+            ?></p>
     </div>
 </div>
 
 <div class="a-info">
-
+    <!--Contient l'image d'accueil-->
 </div>
 
 <?php include('footer.php'); ?>
