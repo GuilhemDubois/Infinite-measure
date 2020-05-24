@@ -43,10 +43,10 @@
                 <form id='form1' name='form1' method='post' action='gestionlogin.php'>
                     <table width='420' border='0'>
                         <tr>
-                            <td width='169' bgcolor='#CCFF00'><label>
+                            <td width='169' bgcolor='#ADD8E6'><label>
                                     <input name='rechercher' type='submit' id='rechercher' value='Rechercher' />
                                 </label></td>
-                            <td width='369' bgcolor='#CCFF00'><label>
+                            <td width='369' bgcolor='#ADD8E6'><label>
                                     <input name='id_user' type='text' id='id_user' value='<?php echo $ALLUSERS[8]; ?>' />
                                 </label>Recherche par nom</td>
                         </tr>
@@ -131,12 +131,12 @@
         if($dejaAfficher == 0){
             ?>
             <form id='form1' name='form1' method='post' action='gestionlogin.php'>
-                <table width='420' border='0'>
+                <table width='500' border='0'>
                     <tr>
-                        <td width='169' bgcolor='#CCFF00'><label>
+                        <td width='169' bgcolor='#ADD8E6'><label>
                                 <input name='rechercher' type='submit' id='rechercher' value='Rechercher' />
                             </label></td>
-                        <td width='369' bgcolor='#CCFF00'><label>
+                        <td width='369' bgcolor='#ADD8E6'><label>
                                 <input name='id_user' type='text' id='id_user' value='' />
                             </label>Recherche par nom</td>
                     </tr>
@@ -196,7 +196,7 @@
         endforeach;
 
         ?>
-        <table width="630" align="left" bgcolor="#CCCCCC">
+        <table width="630" align="left" bgcolor="#ADD8E6">
             <tr >
 
                 <td width="152">Nom</td>
