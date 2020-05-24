@@ -43,6 +43,7 @@
             ?></a>
 
     </div>
+
     <?php include('Footer.php'); ?>
 
     <script src="app.js" charset="utf-8"></script>
