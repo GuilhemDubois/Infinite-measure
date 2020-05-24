@@ -43,10 +43,10 @@
                 <form id='form1' name='form1' method='post' action='gestionlogin.php'>
                     <table width='420' border='0'>
                         <tr>
-                            <td width='169' bgcolor='#ADD8E6'><label>
+                            <td width='169' bgcolor='#CCCCCC'><label>
                                     <input name='rechercher' type='submit' id='rechercher' value='Rechercher' />
                                 </label></td>
-                            <td width='369' bgcolor='#ADD8E6'><label>
+                            <td width='369' bgcolor='#CCCCCC'><label>
                                     <input name='id_user' type='text' id='id_user' value='<?php echo $ALLUSERS[8]; ?>' />
                                 </label>Recherche par nom</td>
                         </tr>
@@ -133,10 +133,10 @@
             <form id='form1' name='form1' method='post' action='gestionlogin.php'>
                 <table width='500' border='0'>
                     <tr>
-                        <td width='169' bgcolor='#ADD8E6'><label>
+                        <td width='169' bgcolor='#CCCCCC'><label>
                                 <input name='rechercher' type='submit' id='rechercher' value='Rechercher' />
                             </label></td>
-                        <td width='369' bgcolor='#ADD8E6'><label>
+                        <td width='369' bgcolor='#CCCCCC'><label>
                                 <input name='id_user' type='text' id='id_user' value='' />
                             </label>Recherche par nom</td>
                     </tr>
@@ -238,6 +238,18 @@
                 $test=$row;
             } ?>
         </table>
+    </div>
+    <div class="g-button">
+        <a href="statistique.php" class="g-button-start"><?php if ($_SESSION['langue'] == 'francais')
+            {
+                echo "Statistiques";
+            }
+            else
+            {
+                echo "Statistics";
+            }
+            ?></a>
+
     </div>
 </div>
 
