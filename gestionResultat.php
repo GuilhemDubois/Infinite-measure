@@ -7,12 +7,10 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
     <title>  <?php if ($_SESSION['langue'] == 'francais')
         {
             echo "Résultats";
-
         }
         else
         {
             echo "Results";
-
         }
         ?></title>
     <link rel="stylesheet" href="headerStyle.css"/>
@@ -35,55 +33,68 @@ if($admin==0){echo '<body onLoad=" alert(\'Vous n avez pas le droit d acceder à
 ?>
 
 
+    <div class="result">
+        <div class="r-title">
+            <h2><?php if ($_SESSION['langue'] == 'francais')
+                {
+                    echo "Vos résultats";
+                }
+                else
+                {
+                    echo "Your results";
+                }
+                ?></h2>
+        </div>
+
+        <div class="r-table">
+            <table width="630" align="left" bgcolor="#CCCCCC">
+                <tr>
+                    <th width="248"><?php if ($_SESSION['langue'] == 'francais')
+                        {
+                            echo "Vos sessions";
+                        }
+                        else
+                        {
+                            echo "Your sessions";
+                        }
+                        ?></h2></th>
+                </tr>
+
+                <?php  $req = $pdo->prepare("SELECT identifiant FROM user ");
+                $req->execute();
+                $alluser= $req->fetchAll();
+                $var=1;
+                foreach($alluser as $allUSER):
+                    $identifiant=$allUSER->identifiant;
+                    if ($var==0){ ?>
+                        <tr >
+                            <td width="248"><?php echo $identifiant ?></td>
+                        </tr>
+                        <?php 	$var=1;
+                    }else{ ?>
+
+                        <tr bgcolor="#FFCCCC">
+                            <td width="248"><?php echo $identifiant ?></td>
+                        </tr><undefined></undefined>
+                        <?php 	$var=0;
+                    }
+                endforeach;
+                ?>
+
+                <form name='r-form1' method='post' action='gestionResultat.php'>
 
 
-    <div class="faq">
-        <div class="f-title">
-
-<table width="630" align="left" bgcolor="#CCCCCC">
-    <tr >
-
-
-        <th width="248">Identifiant</th>
-
-
-    </tr>
-    <?php  $req = $pdo->prepare("SELECT identifiant FROM user ");
-    $req->execute();
-    $alluser= $req->fetchAll();
-    $var=1;
-    foreach($alluser as $allUSER):
-        $identifiant=$allUSER->identifiant;
-        if ($var==0){ ?>
-
-            <tr >
-                <td width="248"> <?php echo $identifiant ?></td>
-            </tr>
-            <?php 	$var=1;
-        }else{ ?>
-
-            <tr bgcolor="#FFCCCC">
-                <td width="248"><?php echo $identifiant ?></td>
-            </tr><undefined></undefined>
-            <?php 	$var=0;
-        }
-    endforeach;
-    ?>
-
-    <form name='form1' method='post' action='gestionResultat.php'>
-
-
-        <td width='169' bgcolor='#CCFF00'>
-
-            <input name='recherche' type='text' id='rechercher'  />
-            <input name='rechercher' type='submit' id='rechercher' value='Rechercher' />
-        </td>
-    </form>
-</table>
+                    <td width='169' bgcolor='#CCFF00'>
+                        <input name='recherche' type='text' id='rechercher' />
+                        <input name='rechercher' type='submit' id='rechercher' value='Rechercher' />
+                    </td>
+                </form>
+            </table>
             <?php
 
             if(isset($_POST['recherche'])){ echo 'Historique de ',$_POST['recherche']; }?>
-   </div>
+        </div>
+
     </div>
 <?php
 

@@ -2,7 +2,6 @@
 $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 
 <html>
-
 <head>
     <meta charset="utf-8" />
     <title>  <?php if ($_SESSION['langue'] == 'francais')
@@ -24,12 +23,13 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" charset="utf-8"></script>
 
 </head>
+
 <?php include ('header.php'); ?>
 
 <body>
 
-<div class="faq">
-    <div class="f-title">
+<div class="result">
+    <div class="r-title">
         <h2>Votre historique</h2>
     </div>
 </div>
@@ -37,11 +37,8 @@ $_SESSION["location"] = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];?>
 <?php require_once 'bdd.php';
 if(!isset($_SESSION['auth'])){  echo '<body onLoad="alert(\'Connectez vous...\')">';
     echo '<meta http-equiv="refresh" content="0;URL=Connexion.php">';
-}else{
-
-
-
-
+}
+else{
 $re=$_SESSION['auth']->identifiant; /*re variable de l'user rechercher*/
 $req = $pdo->prepare("SELECT MAX(id_Test) FROM `test` WHERE identifiant='$re'");
  $req->execute();
@@ -51,7 +48,7 @@ foreach ($nbtests as $name => $value) {
     $nbtest = $value;
 }  /* selectionne le nombre de test effectuer*/
     if ($nbtest==''){ echo "<section><div class='f-container'><div class='f-accordion'><div class=\"f-accordion-item\" id=\"question1\">
-            <a class=\"f-accordion-link\" href=\"#question1\"> Vous n'avez pas de test effectué !</a></div></div></div></section>"; }
+            <a class=\"f-accordion-link\" href=\"#question1\"> Vous n'avez pas encore effectué un test!</a></div></div></div></section>"; }
     ?>
 <section>
 <div class="f-container">
